@@ -1,0 +1,13 @@
+vimrc
+	~/.vimrc
+    ~/.vim/vimrc
+mc
+	~/.config/mc/ini	
+mocp
+	/.config/mc/ini
+tmux
+	~/.tmux.conf
+	//source yourself
+	~/.tmux-keybindings.conf
+vifmrc
+	

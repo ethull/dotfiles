@@ -1,0 +1,167 @@
+"vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+"git interface
+Plugin 'tpope/vim-fugitive'
+
+"status line
+Plugin 'itchyny/lightline.vim'
+
+"filesystem
+" find files with arrow keys
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+" find files and tags, use with nerd: lightweight, easier to locate files within current directory
+Plugin 'kien/ctrlp.vim' 
+" ctrl-P alternative, dont enable them both
+"Plugin 'junegunn/fzf'
+"Plugin 'junegunn/fzf.vim'
+
+"html
+" see markdown files in action, while editing them
+" isnowfy only compatible with python not python3
+Plugin 'isnowfy/python-vim-instant-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'nelstrom/vim-markdown-preview'
+"python sytax checker
+Plugin 'nvie/vim-flake8'
+Plugin 'vim-scripts/Pydiction'
+" contains PEP8 indentation for python, uncomment if needed
+"Plugin 'vim-scripts/indentpython.vim'
+" multi language generic syntax checker
+Plugin 'scrooloose/syntastic'
+
+"auto-completion stuff
+"Plugin 'klen/python-mode'
+" multi language (contains clang, jedi, gopls, tsserver, rls, jdt.ls)
+Plugin 'Valloric/YouCompleteMe'
+" rope, code assist and lots of extra commands, disable to avoid keymap collisions unless you can remap them
+" Plugin 'klen/rope-vim'
+" contained in YCM
+"Plugin 'davidhalter/jedi-vim'
+"Plugin 'ervandew/supertab'
+
+"code folding
+" Plugin 'tmhedberg/SimpylFold'
+
+"colors
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+
+" tell vundle that there's no more plugins 
+call vundle#end()
+
+filetype plugin indent on    " enables filetype detection
+let g:SimpylFold_docstring_preview = 1
+
+"autocomplete 
+let g:ycm_autoclose_preview_window_after_completion=1
+
+"custom keys
+let mapleader=" "
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"
+call togglebg#map("<F5>")
+"colorscheme zenburn
+"set guifont=Monaco:h14
+
+" setup nerdtree plugin
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+map <C-e> :NERDTreeToggle<CR>
+
+"I don't like swap files
+set noswapfile
+
+"turn on numbering
+set nu
+
+"python with virtualenv support
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUA_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  sys.path.insert(0, project_base_dir)
+  activate_this = os.path.join(project_base_dir,'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+"it would be nice to set tag files by the active virtualenv here
+":set tags=~/mytags "tags for ctags and taglist
+"omnicomplete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+"------------Start Python PEP 8 stuff----------------
+" Number of spaces that a pre-existing tab is equal to.
+au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
+
+"spaces for indents
+au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw set expandtab
+au BufRead,BufNewFile *.py set softtabstop=4
+
+" Use the below highlight group when displaying bad whitespace is desired.
+highlight BadWhitespace ctermbg=red guibg=red
+
+" Display tabs at the beginning of a line in Python mode as bad.
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+" Make trailing whitespace be flagged as bad.
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Wrap text after a certain number of characters
+au BufRead,BufNewFile *.py,*.pyw, set textwidth=100
+
+" Use UNIX (\n) line endings.
+au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
+
+" Set the default file encoding to UTF-8:
+set encoding=utf-8
+
+" For full syntax highlighting:
+let python_highlight_all=1
+syntax on
+
+" Keep indentation level from previous line:
+autocmd FileType python set autoindent
+
+" make backspaces more powerfull
+set backspace=indent,eol,start
+
+" use to set the clipboard to the systems (ratehr than use vims internal clipboard)
+" set clipboard=unnamed
+vnoremap <C-X> "+x
+" in normal mode ctrl-c and ctrl-v use the global register (use normal y and p for unamed)
+vnoremap <C-c> "+y
+nnoremap <C-c> "+y
+nnoremap <C-v> "+P
+" in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
+inoremap <C-c> <NOP>
+inoremap <C-v> <C-r>"
+
+"Folding based on indentation:
+autocmd FileType python set foldmethod=indent
+"use space to open folds
+nnoremap <space> za 
+"----------Stop python PEP 8 stuff--------------
+
+"js stuff"
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+" map keys
+" n  Normal mode map. Defined using ':nmap' or ':nnoremap'.
+" i  Insert mode map. Defined using ':imap' or ':inoremap'.
+" v  Visual and select mode map. Defined using ':vmap' or ':vnoremap'.
+" x  Visual mode map. Defined using ':xmap' or ':xnoremap'.
+" s  Select mode map. Defined using ':smap' or ':snoremap'.
+" c  Command-line mode map. Defined using ':cmap' or ':cnoremap'.
+" o  Operator pending mode map. Defined using ':omap' or ':onoremap'.
+
+
+
