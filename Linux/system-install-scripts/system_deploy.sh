@@ -1,19 +1,20 @@
-set_package_manager(){	
+check_package_manager(){	
 	if [ -x "$(command -v apt-get)" ]; then
-		PM="sudo apt-get install -y"
+		PM="apt-get"
 
 	elif [ -x "$(command -v pacman)" ]; then
-		PM="sudo pacman -S" 
+		PM="pacman" 
 
 	elif [ -x "$(command -v brew)" ]; then
-		PM="brew install" 
+		PM="brew"  
 
 	elif [ -x "$(command -v pkg)" ]; then
-		PM="sudo pkg install"
+		PM="pkg"
 	else
 		echo "package manager not detected" 
 		exit
-	fi 	
+	fi 
+    echo $PM    
 }
 
 #install software stright away
@@ -35,8 +36,12 @@ prompt_install() {
 
 #install software
 install_software(){
-	set_package_manager
-	$PM vim	
+	PM=check_package_manager
+	#run install script relative to system package manager
+    if ["$PM"=="apt"]; then
+        ./ubuntu_install_script
+    else if ["$PM"=="apt"]; then 
+        ./arch_install_script    
 }
 
 #dotfiles setup
@@ -56,7 +61,7 @@ dotfiles_setup(){
 	fi
 
 	#move dotfiles to correct location on current system
-	printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
+	#printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
 	printf "so $HOME/dotfiles/vim/vimrc.vim" > ~/.vimrc
 	printf "source-file $HOME/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
 }

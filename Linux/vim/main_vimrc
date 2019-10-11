@@ -21,7 +21,6 @@ endif
 " Required:
 call plug#begin(expand('~/.vim/plugged'))
 
-
 "" Plug install packages
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -80,17 +79,24 @@ Plug 'ludwig/split-manpage.vim'
 
 " html
 Plug 'hail2u/vim-css3-syntax'
+"preview colours
 Plug 'gorodinskiy/vim-coloresque'
+"updated haml n sass runtime files
 Plug 'tpope/vim-haml'
+" expand abbreviations
 Plug 'mattn/emmet-vim'
 
 " javascript
 Plug 'jelera/vim-javascript-syntax'
 
 " python
-Plug 'davidhalter/jedi-vim'
+" autoomplete (overwriten by YCM)
+"Plug 'davidhalter/jedi-vim'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
+"multi language autocomplete
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
+ 
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
   source ~/.vimrc.local.bundles
@@ -111,6 +117,8 @@ set ttyfast
 
 " Fix backspace indent
 set backspace=indent,eol,start
+"Stop delay when changing back to normal mode
+set timeoutlen=1000 ttimeoutlen=0
 
 " Tabs. May be overridden by autocmd rules
 set tabstop=4
@@ -152,6 +160,9 @@ set number
 
 let no_buffers_menu=1
 silent! colorscheme molokai
+
+" disable match brackets (to stop annoying bracket jumping), instead use %
+let g:loaded_matchparen=1
 
 set mousemodel=popup
 set t_Co=256
@@ -242,7 +253,7 @@ let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 50
+let g:NERDTreeWinSize = 35
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
@@ -358,6 +369,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " ale
 let g:ale_linters = {}
+let g:ale_fixers = {}
 
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
@@ -468,8 +480,19 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#smart_auto_mappings = 0
 
 " ale
+let g:ale_linters_explicit = 1
 :call extend(g:ale_linters, {
-    \'python': ['flake8'], })
+    \'python': ['flake8'], 
+    \'javascript': ['eslint'],
+    \'jsx': ['eslint'],
+    \'java': ['checkstyle']
+    \})
+"if using prettier swap js and css
+:call extend(g:ale_fixers, {
+    \'javascript': ['eslint'],
+    \'css': ['eslint']      
+    \})
+let g:ale_fix_on_save = 1
 
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
