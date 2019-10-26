@@ -7,7 +7,6 @@
 		makepkg -si && cd /tmp/
 		git clone https://aur.archlinux.org/yaourt.git
 		cd yaourt/ && makepkg -si
-        
 ##generic software
 #screen snipper, uses less dependancies than shutter
 sudo pacman -S screenFetch	
@@ -43,8 +42,7 @@ sudo systemctl enable --now vboxservice.service
 
 #cybersecurity
 sudo pacman -S metasploit
-sudo pacman -S gdb
-sudo pacman -S pwndbg
+sudo pacman -S gdb pwndbg
 #TODO metagoofil
 #TODO cewl
 #pdf scrubbing
@@ -53,7 +51,9 @@ yaourt pdftk
 pacman -S qpdf
 #dns
 yaourt dnsmap
-#hidden firectories
+#hidden directories
 yaourt dirb
 #port scanner
 pacman -S nmap
+#volatility, memory forensics
+#pacman -S volatility

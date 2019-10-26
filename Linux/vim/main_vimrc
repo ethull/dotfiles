@@ -65,6 +65,9 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
+" streamless vim-tmux split navigation
+Plug 'christoomey/vim-tmux-navigator'
+
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -122,9 +125,16 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Tabs. May be overridden by autocmd rules
 set tabstop=4
-set softtabstop=0
+" change max amount of BS that can be inserted, set to -1 tp cp shiftwidth
+set softtabstop=4
 set shiftwidth=4
 set expandtab
+
+" Splits
+" natural split opening
+set splitbelow
+set splitright
+
 
 " Map leader to ,
 let mapleader=','
@@ -272,7 +282,15 @@ nnoremap <silent> <leader>sh :terminal<CR>
 " remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
 
-
+"" Functions
+if !exists('*s:setupWrapping')
+  function s:setupWrapping()
+    set wrap
+    set wm=2
+    set textwidth=79
+  endfunction
+endif
+  
 "" Autocmd Rules
 " The PC is fast enough, do syntax highlight syncing from start unless 200 lines
 augroup vimrc-sync-fromstart
@@ -306,6 +324,14 @@ set autoread
 " Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
+" recomend remaping window operations resize splits to avoid ctrl + w + shift 
+" popular nnoremap +-<> <C-w>+-<>  
+" can use HJKL as this works nice in tmux as prefix-HJKL
+nnoremap K <C-w>+
+nnoremap J  <C-w>-
+nnoremap H  <C-w>< 
+nnoremap L <C-w>> 
+" navigation remaps
 
 " Git
 noremap <Leader>ga :Gwrite<CR>
@@ -414,6 +440,11 @@ inoremap <C-v> <C-r>"
 noremap <leader>z :bp<CR>
 noremap <leader>q :bp<CR>
 noremap <leader>x :bn<CR>
+noremap <leader>x :bn<CR>
+" Buffer nav
+noremap <leader>z :bp<CR>
+noremap <leader>q :bp<CR>
+noremap <leader>x :bn<CR>
 noremap <leader>w :bn<CR>
 
 " Close buffer
@@ -482,10 +513,11 @@ let g:jedi#smart_auto_mappings = 0
 " ale
 let g:ale_linters_explicit = 1
 :call extend(g:ale_linters, {
-    \'python': ['flake8'], 
+    \'python': ['flake8', 'pylint'], 
     \'javascript': ['eslint'],
     \'jsx': ['eslint'],
-    \'java': ['checkstyle']
+    \'java': ['checkstyle'],
+    \'c': ['clang','gcc']
     \})
 "if using prettier swap js and css
 :call extend(g:ale_fixers, {
@@ -542,18 +574,6 @@ else
   let g:airline_right_alt_sep = ''
   let g:airline_symbols.branch = ''
   let g:airline_symbols.readonly = ''
-  let g:airline_symbols.linenr = ''
-endif
-
-
-""hacks
-"" Functions
-if !exists('*s:setupWrapping')
-  function s:setupWrapping()
-    set wrap
-    set wm=2
-    set textwidth=79
-  endfunction
 endif
 
 "python with virtualenv support

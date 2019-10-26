@@ -1,0 +1,42 @@
+<Cleaning windows>
+System -> advenced system settings -> turn off unessecary performance settings, turn off remote access to computer
+Services -> Disable -> apply -> stop:, repeat for: Conncted user experiences, Delivery optimisation, Distributed link tracking client, Payements and NFC/SE Manager (optional), update orchestrator service (optional)
+File explorer -> view -> options -> view -> disable show sync provider notifications -> apply
+Settings -> windows security -> virus and threat protection settings -> turn off cloud-delivered protection and automatic sample submission
+       -> privacy -> general -> turn off everything
+	            -> diagnostics and feedback -. turn off everything or chose lowest settings
+	   -> cortana	 -> turn off everything
+	   -> ease of access -> keyboard -> turn off sticky keys stuff
+	                   -> Display -> Show transparency in windows (optional)
+		-> Gaming -> Game bar -> Turn everything off (optional (recommended))
+                 -> Game DVR -> Turn off background reording and recored audio (optional)
+				 -> Broadcasting -> Turn off record audio when I broadcast (optional)
+		-> Home -> Sign-In options -> Turn off use my sign in info to automaticcally finish settings up my device and reopen my apps after a restart (optional)
+		-> Apps -> Apps and features ->  Uninstall crap: App installer, apple software update (optional), microsfot one note
+		        -> Offline maps -> Turn off automatic map updates (optional)
+				-> Apps for websites -> Turn off everything
+				-> Startup: Check each program specifically (Don't turn off Intel/Dell/Boot stuff)
+		-> System -> Notifications and actions -> Turn off all notifications
+				 -> Tablet mode -> Turn off Hide app icons on the taskbar in tablet mode (optional)
+				 -> Multi-tasking -> Turn off timeline sugestions
+				 -> Shared experiences -> Turn off share across devices (optional)
+					cmd (As addministrator) -> Turn off hibernation via: powercfg -h off
+
+remove stuff with code
+    Run power shell scripts
+    run 0&0 shutup
+    
+Nvidia
+	Stop uneccessary services
+		NVIDIA localsystem container
+		NVIdia network service
+		NVIDIA telementrey container
+		keep
+			NVIDIA display container
+	Automatic uneccessary programs	
+		NVIDIA web helper
+			Windows Firewall 
+				"New Rule" > Program > Browse to the following path (C:\Program Files (x86)\NVIDIA Corporation\NvNode) and choose NVIDIA Web Helper > Block the connection > 
+				give it a name > repeat for "Outbound Rules"
+				
+

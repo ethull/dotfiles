@@ -26,7 +26,7 @@ langauge setup(){
     mkdir ~/.vim/manual-setup/linters
     mkdir ~/.vim/manual-setup/language-servers
     
-    ##java setup, set relative to current java installed, 
+    ##java setup, set relative to current java installed  
     #TODO fix java lsp link-linux executable 
     sed -i $a "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/bin" ~/.profile
     #checkstyle (java linter) is not in archs repos, download jar file and put in a launcher script for ale to find
@@ -36,7 +36,7 @@ langauge setup(){
     chmod u+x checkstyle
     #add to path for language server client (ale, syntastic)
     cp ./checkstyle /usr/bin
-   #java language server setup
+    #java language server setup, not needed if using YCM (has inbuilt eclipse server)
     cd ~/.vim/manual-setup/language-servers
     git clone https://github.com/georgewfraser/java-language-server.git
     cd java-language-server

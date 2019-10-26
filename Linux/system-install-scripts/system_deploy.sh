@@ -1,3 +1,4 @@
+#TODO build script to identify system and package manager
 check_package_manager(){	
 	if [ -x "$(command -v apt-get)" ]; then
 		PM="apt-get"
