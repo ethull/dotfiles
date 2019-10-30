@@ -16,8 +16,11 @@ langauge setup(){
     npm install eslint --save-dev -g
     # /usr/lib/node_modules/bin/eslint.js --init
     npm install typescript -g
-    #optional code fixer, I use eslint aswell instead 
-    #npm install prettier --save-dev -g
+    #optional code fixer, good for html/css 
+    npm install prettier --save-dev -g
+    #js lang server
+    npm install -g javascript-typescript-langserver
+
     #setup python autocomplete and linters
     sudo pip3 install jedi flake8
     

@@ -522,7 +522,10 @@ let g:ale_linters_explicit = 1
 "if using prettier swap js and css
 :call extend(g:ale_fixers, {
     \'javascript': ['eslint'],
-    \'css': ['eslint']      
+    \'typescript': ['prettier'],
+    \'css': ['prettier'],      
+    \'scss': ['prettier'], 
+    \'html': ['prettier']
     \})
 let g:ale_fix_on_save = 1
 
