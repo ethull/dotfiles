@@ -37,7 +37,7 @@ Plug 'vim-scripts/CSApprox'
 Plug 'Raimondi/delimitMate'
 " sidebar that displays the ctags-generated tags of the current file, ordered by their scope
 Plug 'majutsushi/tagbar'
-"lint while you type, language client that supports language server features
+"async linter, optionally lsp client
 Plug 'w0rp/ale'
 "alternative to following for spaces :set list lcs=tab:\|\ 
 Plug 'Yggdroot/indentLine'
@@ -58,7 +58,7 @@ endif
 let g:make = 'gmake'
 if exists('make')
         let g:make = 'make'
-endif
+endif   
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
 " Vim-Session
@@ -98,7 +98,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 "multi language autocomplete
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
  
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))

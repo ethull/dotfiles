@@ -1,0 +1,42 @@
+https://github.com/neoclide/coc.nvim/wiki/Language-servers#register-custom-language-servers
+
+java
+    eclipse java lsp
+        :CocInstall java
+    georgewfraser/java-language-server    
+        manual
+            cd ~/.vim/manual-setup/language-servers
+            git clone https://github.com/georgewfraser/java-language-server.git                                                                                                                        cd java-language-server                                                                                                                                                                    scripts/link_linux.sh 
+            coc-settings.json as custom lsp
+python 
+    palantir/python-language-server
+        :CocInstall python
+        manual
+            pip3 install python-language-server
+            coc-settings.json as provided lsp
+js
+    javascript-typescript-langserver    
+        manual
+            npm i -g javascript-typescript-langserver
+            coc-settings.json as custom lsp
+    flow
+        manual
+            TODO get setup
+            coc-settings.json as provided lsp
+bash
+    bash-language-server
+        manual
+            npm i -g javascript-typescript-langserver
+            coc-settings.json as provided lsp
+c
+    ccls
+        manual
+            TODO get setup    
+            https://github.com/MaskRay/ccls/wiki
+            coc-settings.json as provided lsp
+    clangd
+        manual
+            TODO get setup
+            https://clang.llvm.org/docs/JSONCompilationDatabase.html
+            coc-settings.json as provided lsp
+
