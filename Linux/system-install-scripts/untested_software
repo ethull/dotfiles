@@ -1,0 +1,36 @@
+#Laptop power management
+	#TLP power management tool
+		sudo add-apt-repository ppa:linrunner/tlp
+		sudo apt-get update
+		sudo apt-get install tlp tlp-rdw
+		sudo tlp start
+	#Laptop mode tools
+		sudo add-apt-repository ppa:ubuntuhandbook1/apps
+	    	sudo apt-get update
+	 	   sudo apt-get install laptop-mode-tools
+		#GUI for additional personalisation
+		sudo gksu lmt-config-gui
+
+#CLI Text editors 
+	#kakoune
+		sudo apt update && sudo apt install build-essential libncurses5-dev libncursesw5-dev asciidoc
+		cd Downloads/
+		git clone http://github.com/mawww/kakoune.git
+		cd kakoune/src
+		make
+		make man
+		sudo make install
+		#run
+		kak getpubip.sh 
+	#Micro
+		curl https://getmic.ro | bash
+		#or
+		go get -d github.com/zyedidia/micro/cmd/micro
+		cd $GOPATH/src/github.com/zyedidia/micro
+		make install
+
+#Proton vpn (most packages already installed)
+sudo apt-get install openvpn dialog
+sudo wget -O protonvpn-cli.sh https://raw.githubusercontent.com/ProtonVPN/protonvpn-cli/master/protonvpn-cli.sh
+
+

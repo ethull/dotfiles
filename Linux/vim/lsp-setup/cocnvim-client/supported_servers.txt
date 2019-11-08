@@ -4,39 +4,52 @@ java
     eclipse java lsp
         :CocInstall java
     georgewfraser/java-language-server    
-        manual
+        system setup
             cd ~/.vim/manual-setup/language-servers
-            git clone https://github.com/georgewfraser/java-language-server.git                                                                                                                        cd java-language-server                                                                                                                                                                    scripts/link_linux.sh 
+            git clone https://github.com/georgewfraser/java-language-server.git     
+            cd java-language-server
+            scripts/link_linux.sh 
+        integration
             coc-settings.json as custom lsp
 python 
     palantir/python-language-server
         :CocInstall python
-        manual
+        system setup
             pip3 install python-language-server
+        integration
             coc-settings.json as provided lsp
 js
+    tsserver
+        :CocInstall coc-tsserver
     javascript-typescript-langserver    
-        manual
+        system setup    
             npm i -g javascript-typescript-langserver
+        integration
             coc-settings.json as custom lsp
     flow
-        manual
+        system setup
             TODO get setup
+        integration
             coc-settings.json as provided lsp
+    
 bash
     bash-language-server
-        manual
+        :CocInstall coc-sh 
+        system setup
             npm i -g javascript-typescript-langserver
+        integration
             coc-settings.json as provided lsp
 c
     ccls
-        manual
+        system setup
             TODO get setup    
             https://github.com/MaskRay/ccls/wiki
+        integration
             coc-settings.json as provided lsp
     clangd
-        manual
+        system setup
             TODO get setup
             https://clang.llvm.org/docs/JSONCompilationDatabase.html
+        integration    
             coc-settings.json as provided lsp
 

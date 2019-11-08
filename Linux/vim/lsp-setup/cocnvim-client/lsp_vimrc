@@ -144,7 +144,7 @@ let mapleader=','
 " Enable hidden buffers
 set hidden
 
-"" options for coc.vim (lsp's)
+"" options for coc.nvim (lsp's)
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
@@ -593,15 +593,15 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#smart_auto_mappings = 0
 
 " ale
+" linters provided by lsp servers: python 
 let g:ale_linters_explicit = 1
 :call extend(g:ale_linters, {
-    \'python': ['flake8', 'pylint'], 
     \'javascript': ['eslint'],
     \'jsx': ['eslint'],
     \'java': ['checkstyle'],
     \'c': ['clang','gcc']
     \})
-"if using prettier swap js and css
+" can use eslint or prettier for web languages
 :call extend(g:ale_fixers, {
     \'javascript': ['eslint'],
     \'typescript': ['prettier'],

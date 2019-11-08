@@ -18,6 +18,7 @@ langauge setup(){
     #==linters
     npm i eslint --save-dev -g
     # /usr/lib/node_modules/bin/eslint.js --init
+    # cp /usr/lib/node_modules/bin/.eslintrc ~/.eslintrc
     #flake8: more PEP8 features, pyflakes: python-language server integration
     sudo pip3 install flake8 pyflakes
     #==fixers

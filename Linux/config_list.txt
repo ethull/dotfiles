@@ -10,4 +10,4 @@ tmux
 	//source yourself
 	~/.tmux-keybindings.conf
 vifmrc
-	
+~/.vifm/vifmrc	
