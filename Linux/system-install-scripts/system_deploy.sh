@@ -37,7 +37,7 @@ prompt_install() {
 
 #install software
 install_software(){
-	PM=check_package_manager
+	PM=${check_package_manager}
 	#run install script relative to system package manager
     if ["$PM"=="apt"]; then
         ./ubuntu_install_script

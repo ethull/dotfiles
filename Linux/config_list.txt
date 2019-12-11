@@ -1,13 +1,14 @@
 vimrc
-	~/.vimrc
     ~/.vim/vimrc
 mc
 	~/.config/mc/ini	
 mocp
-	/.config/mc/ini
+    .moc/config 
+    .moc/themes/themeName
 tmux
 	~/.tmux.conf
 	//source yourself
 	~/.tmux-keybindings.conf
 vifmrc
-~/.vifm/vifmrc	
+    ~/.vifm/vifmrc
+    ~/.vifm/colors/themeName

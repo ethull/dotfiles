@@ -12,9 +12,9 @@
 #==utility software
 #cli tools
 #cp/paste in terminal (for vim and vifm)
-sudo pacman -S xsel 
+sudo pacman -S xsel xclip
 #text editor
-sudo pacman -S vim
+sudo pacman -S gvim
 #security scanners
 sudo pacman -S clamav rkhunter
 #email manager
@@ -23,21 +23,22 @@ sudo pacman -S evolution
 sudo pacman -S gparted 
 #music editor
 sudo pacman -S audacity
-#screen snipper, uses less dependancies than shutter
-sudo pacman -S screenFetch	
+sudo pacman -S screenFetch flameshot	
 #sqlite db editor
 sudo pacman -S sqlitebrowser
 #browser
 sudo pacman -S brave
+#=minimal
+#pdf 
+sudo pacman -S zathura
+#image 
+sudo pacman -S sxiv
+
 
 #==development
 sudo pacman -S npm
 sudo pacman -S git 
 sudo pacman -S postgresql
-#command line programs
-sudo pacman -S links
-sudo pacman -S moc
-sudo pacman -S mc vifm
 
 #==ncurses (interactive cli) programs
 #browser
@@ -45,7 +46,7 @@ sudo pacman -S links
 #music player
 sudo pacman -S moc moc-ffmpeg-plugin
 #file manager
-sudo pacman -S mc vifm
+sudo pacman -S vifm
 
 #virtualisation
 #virtual box

@@ -1,3 +1,4 @@
+" load all files in dir 
 for f in split(glob('~/.vim/*.vim'), '\n')
     exe 'source' f
 endfor
@@ -5,3 +6,5 @@ endfor
 for fpath in split(globpath('~/.vim/*.vim', '*.vim'), '\n')
   exe 'source' fpath
 endfor
+
+" source .vim files to suit configuration

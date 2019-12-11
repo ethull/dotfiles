@@ -8,8 +8,7 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 #cli tools
 sudo apt install curl -y
 #text editors
-sudo apt install vim-gtk3 
-sudo apt install geany
+sudo apt install vim-gtk3 geany
 git clone https://github.com/codebrainz/geany-themes
 mv ./geany-themes/colorschemes/* ~/.config/geany/colorschemes/
 #security scanners
@@ -30,7 +29,7 @@ sudo apt install sqlitebrowser
 sudo apt install magic 
 #sandbox
 sudo apt install firejail
-#usb burner
+#=usb burner
 #wget https://github.com/balena-io/etcher/releases/download/v1.5.63/balena-etcher-electron-1.5.63-linux-ia32.zip  
 #unzip ./balena-etcher-electron-1.5.63-linux-ia32.zip 
 #chmod a+x balenaEtcher-1.5.63-ia32.AppImage
@@ -39,7 +38,7 @@ echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 sudo apt-get update
 sudo apt-get install balena-etcher-electron
-#web browser
+#=web browser
 #Brave browser
 sudo apt install apt-transport-https
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
@@ -51,6 +50,12 @@ sudo apt install brave-browser
 sudo apt install virtualbox
 sudo apt install virtualbox-guest-additions-iso
 sudo modprobe vboxdrv
+#=minimal
+#pdf 
+sudo pacman -S zathura
+#image 
+sudo pacman -S sxiv
+
 
 #==development
 #Python installs
@@ -72,7 +77,8 @@ sudo apt install links2
 #music player
 sudo apt install moc moc-ffmpeg-plugin
 #file manager
-sudo apt install mc vifm
+sudo apt install vifm
+
 
 #==other utils
 #Timeshift, system backup (already installed in LM)
