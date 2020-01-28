@@ -1,0 +1,42 @@
+python 
+    individual function 
+        linters 
+            pyflakes
+            pylint 
+            gjslint
+        style 
+            pycodestyle        
+        enforce code standard (consistency)
+            pylint 
+    wrappers
+        flake8
+            wraps 
+                pyflakes 
+                pycodestyle 
+        prospector 
+            wraps 
+                pylint
+                pycodestyle 
+                mccabe
+        pylama 
+            wraps 
+                pycodestyle 
+                pydocstyle
+                pyflakes 
+                mccabe 
+                pylint
+                radon 
+                gjslint
+                eradicate 
+                Mypy 
+
+    recomended general layout 
+        flake8 + pylint
+
+js
+    eslint
+    tslint 
+
+c, c#, c++
+    clang, clangd
+    ccls

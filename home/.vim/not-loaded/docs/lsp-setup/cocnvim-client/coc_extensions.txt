@@ -1,0 +1,40 @@
+//coc setup
+    //coc plugins, dont need to manually install/setup lsp
+    :CocInstall {} 
+        //lsp's (most are based off vscode)
+            //based off eclipse JDT
+                coc-java
+                //problems JAVA_HOME must point to JDK and not JDK/bin 
+                    //JAVA_HOME=usr/lib/jvm/java-11-openjdk/bin;/usr/lib/jvm/java-11-openjdk 
+            //vscode port
+                coc-python 
+                    //includes linter (dont need ALE to check)
+                coc-tsserver 
+                coc-json 
+                coc-html 
+                coc-css 
+            //Intelephense PHP lsp
+                coc-phpls  
+            //mads-hartmann bash-language-server
+                coc-sh              
+                //problems
+                    //seems to work if you carry the erronous command yourself
+                        cd /home/emera/.config/coc/sh/tools   
+                        npm add bash-language-server
+            //not tested
+                coc-sql
+                coc-flutter
+        //other features
+            //ale features (would still use ale instead for now)
+                //linters
+                    coc-eslint
+                //fixers
+                    coc-prettier    
+            coc-git
+            coc-marketplace           
+
+    //if not avaliable coc plugin, or want to manually setup lsp
+        :CocConfig 
+    //get suggestest lsp config or setup custom if not avaliable
+        //https://github.com/neoclide/coc.nvim/wiki/Language-servers#register-custom-language-servers 
+    
