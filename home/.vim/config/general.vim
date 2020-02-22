@@ -1,3 +1,4 @@
+set nocompatible
 " lookup 
 set autoread
 

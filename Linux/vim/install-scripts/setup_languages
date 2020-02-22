@@ -1,3 +1,0 @@
-langauge_setup(){
-    sed -i $a "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk;usr/lib/jvm/java-11-openjdk/bin" ~/.profile
-}
