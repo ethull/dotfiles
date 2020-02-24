@@ -1,0 +1,13 @@
+#setw -g window-status-format " #F#I:#W#F "
+
+#setw -g window-status-current-format " #F#I:#W#F "
+#setw -g window-status-format "#[fg=magenta]#[bg=black] #I #[bg=cyan]#[fg=colour8] #W "
+#setw -g window-status-current-format "#[bg=brightmagenta]#[fg=colour8] #I #[fg=colour8]#[bg=colour14] #W "
+#setw -g window-status-current-style fg=colour11
+#setw -g window-status-current-style bg=colour0
+#setw -g window-status-current-style dim
+#setw -g window-status-style fg=black
+#setw -g window-status-style bg=green
+#setw -g window-status-style reverse
+
+
