@@ -27,7 +27,10 @@ export FILE="vifm"
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 export XDG_CONFIG_HOME="$HOME/.config"
-export PATH=$PATH:~/programs/flutter/bin
+#export PATH=$PATH:~/programs/flutter/bin
+export PAGER="less"
+#export WM="xfwm4"
+
 # export STATUSBAR="$blocks"
 
 alias brave="brave-browser"
@@ -35,5 +38,14 @@ alias brave="brave-browser"
 #alias ll='ls -alF'
 #alias la='ls -A'
 #alias l='ls -CF'
+
+# man page colours
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 

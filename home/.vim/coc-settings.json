@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
-  "python.linting.enabled": false 
+  "python.linting.enabled": false,
+  "java.errors.incompleteClasspath.severity": "ignore"
 }   
 

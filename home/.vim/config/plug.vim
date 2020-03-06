@@ -26,13 +26,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "visual repersentation of git diff
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-scripts/grep.vim'
+"Plug 'vim-scripts/grep.vim'
 " get gvim colour schemes to work in terminal vim
 Plug 'vim-scripts/CSApprox'
 " sidebar that displays the ctags-generated tags of the current file, ordered by their scope
 Plug 'majutsushi/tagbar'
 "async linter, optionally lsp client
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 "versatile lsp client
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "alternative to following for spaces :set list lcs=tab:\|\ 
@@ -65,7 +65,7 @@ Plug 'xolox/vim-session'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Snippets
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " Color
@@ -77,25 +77,39 @@ Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
 Plug 'ludwig/split-manpage.vim'
 
 " html
-Plug 'hail2u/vim-css3-syntax'
+"Plug 'hail2u/vim-css3-syntax'
 "preview colours
 Plug 'gorodinskiy/vim-coloresque'
 "updated haml n sass runtime files
-Plug 'tpope/vim-haml'
+"Plug 'tpope/vim-haml'
 " expand abbreviations
 Plug 'mattn/emmet-vim'
 
 " javascript
-Plug 'jelera/vim-javascript-syntax'
+"Plug 'jelera/vim-javascript-syntax'
 
 " python
 " autoomplete (overwriten by YCM)
 "Plug 'davidhalter/jedi-vim'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+"Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+
+" markdown
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+"Plug 'gabrielelana/vim-markdown'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 "multi language autocomplete
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
- 
+
+" notetaking
+" Plug 'vimwiki/vimwiki'
+
+
+"- /home/emera/.vim/plugged/dart-vim-plugin/
+"- /home/emera/.vim/plugged/ultisnips/
+"- /home/emera/.vim/plugged/vim-jekyll/
+
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
   source ~/.vimrc.local.bundles

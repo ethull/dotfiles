@@ -1,0 +1,66 @@
+tag...? key tag...?
+normal mode ---
+n
+N
+,sh 
+split ,s  
+vsplit ,v
+split size 
+    K J H L 
+set pwd
+    ,. ,e ,te ctrl-p
+clipboard
+    YY ,p XX
+    C-x C-c C-v
+,no
+Git
+    ,ga ,gc ,gsh ,gll
+    ,gs ,gb ,gd ,gr ,go
+ 
+session management
+    ,so ,ss ,sd ,sc
+
+,fzm :FZF -m<CR>
+,y :History:<CR>
+<F4> :TagbarToggle<CR>
+
+nerdtree
+    F2
+    F3
+grep.vim ,f
+    
+visual mode ---
+    < >
+    J 
+    K
+
+
+
+coc.nvim 
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+xmap 
+    ,a  <Plug>(coc-codeaction-selected)
+
+    if <Plug>(coc-funcobj-i)
+    af <Plug>(coc-funcobj-a)
+    <C-d> <Plug>(coc-range-select)
+nmap 
+    ,a  <Plug>(coc-codeaction-selected)
+    ,ac <Plug>(coc-codeaction) 
+    ,qf  <Plug>(coc-fix-current)
+    <C-d> <Plug>(coc-range-select)
+nnoremap
+    <space>e  :<C-u>CocList extensions<cr>
+    <space>c  :<C-u>CocList commands<cr>
+    <space>o  :<C-u>CocList outline<cr>
+    <space>s  :<C-u>CocList -I symbols<cr>
+    <space>j  :<C-u>CocNext<CR>
+    <space>k  :<C-u>CocPrev<CR>
+    <space>p  :<C-u>CocListResume<CR>
+    <space>a  :<C-u>CocList diagnostics<cr>
+
+omap 
+    if <Plug>(coc-funcobj-i)
+    af <Plug>(coc-funcobj-a)
+
+

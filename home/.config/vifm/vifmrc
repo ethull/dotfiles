@@ -64,7 +64,7 @@ set norunexec
 
 " Selected color scheme
 
-colorscheme emera
+colorscheme zenburn_1
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -136,6 +136,9 @@ mark h ~/
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %f.zip %f
+command! unzip unzip %f
+command! tarc tar -cvzf %f.tgz %f
+command! tarx tar -xf %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
@@ -218,6 +221,8 @@ filextype *.html,*.htm
         \ dwb %f %i &,
         \ {Open with firefox}
         \ firefox %f &,
+        \ {Open with brave}
+        \ brave %f &,
         \ {Open with uzbl}
         \ uzbl-browser %f %i &,
 filetype *.html,*.htm links, lynx
@@ -232,15 +237,15 @@ fileviewer *.[1-8] man ./%c | col -b
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
-        \ sxiv %f,
+        \ sxiv %f &,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
          \ identify %f
+fileviewer *.jpg,*.jpeg,*.png,*.ico vifmimg draw %px %py %pw %ph %c %pc vifmimg clear
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.ico,*.gif,*.xpm  rotdir %f 2>/dev/null | sxiv -ia 2>/dev/null &
 
-" OpenRaster
 filextype *.ora
         \ {Edit in MyPaint}
         \ mypaint %f,
@@ -271,9 +276,10 @@ filetype *.sha512
        \ sha512sum -c %f %S,
 
 " GPG signature
-filetype *.asc
+filetype *.asc, *.sign
        \ {Check signature}
        \ !!gpg --verify %c,
+
 
 " Torrent
 filetype *.torrent ktorrent %f &
@@ -326,7 +332,7 @@ filetype *.7z
 fileviewer *.7z 7z l %c
 
 " Office files
-filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
+filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f > /dev/null 2>&1 &
 fileviewer *.doc catdoc %c
 fileviewer *.docx docx2txt.pl %f -
 
@@ -409,10 +415,12 @@ nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
+nnoremap o :!vim %f<cr>
 " Open file in existing instance of gvim
-nnoremap o :!gvim --remote-tab-silent %f<cr>
+nnoremap O :! sudo vim %f<cr>
+"nnoremap o :!gvim --remote-tab-silent %f<cr>
 " Open file in new instance of gvim
-nnoremap O :!gvim %f<cr>
+"nnoremap O :!gvim %f<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l

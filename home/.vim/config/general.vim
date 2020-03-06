@@ -25,7 +25,6 @@ set expandtab
 set splitbelow
 set splitright
 
-
 " Map leader to ,
 let mapleader=','
  

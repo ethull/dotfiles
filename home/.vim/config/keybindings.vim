@@ -60,7 +60,9 @@ noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
 " consider noremap PP "+P<CR>
 
-"
+" remap visual block mode
+noremap <space>v <C-v>
+
 " in normal mode ctrl-x/ctrl-c/ctrl-v use the global register (use normal y and p for unamed)
 noremap <C-x> "+x
 noremap <C-c> "+y
