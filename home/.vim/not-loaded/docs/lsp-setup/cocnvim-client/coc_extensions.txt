@@ -21,6 +21,8 @@
                     //seems to work if you carry the erronous command yourself
                         cd /home/emera/.config/coc/sh/tools   
                         npm add bash-language-server
+            //latex
+                coc-vimtex
             //not tested
                 coc-sql
                 coc-flutter

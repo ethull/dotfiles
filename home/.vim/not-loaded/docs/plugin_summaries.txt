@@ -3,30 +3,18 @@ https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
 already configured setups
 	https://github.com/SpaceVim/SpaceVim
 recomended setup
-    regardless of setup choice
-        nerdtree: file navigation
-        fuzzy file finder: ctrlp or fzf
+        file navigation: nerdtree
+        fuzzy file finder: ctrlp, fzf
         syntax highlight: vim polygot
         git: fugitive
         statusline: airline airline-themes 
-    langserver (lsp)
+        linter: ale, syntastic, some lsps
+        automcomplete: ycm, deoplete, lsp
+    langserver (lsp) clients
         //lsp provides autocomplete and other IDE features
-        1 //harder to setup (and less documenation)
-            linting: ale
-            lsp: ale (set linters to language server commands)
-        2
-            linting: ale or syntastic
-            lsp client: coc.nvim              
-        3 //setting up the language servers to do linting too
-            lsp: coc.nvim 
-	no lsp
-        linter: ale or syntastic 
-        autocomplete: ycm
-    no lsp, individual
-        linter: ale or syntastic
-        python-autocomplete: jedi
-        ...
-    
+            //providers
+                ale //hard to setup, leser features, also lints (less plugins needed)
+                coc.nvim //easy to setup, many extensions
 
 other
 	https://github.com/tpope/vim-vinegar
@@ -34,8 +22,9 @@ other
 Project/Filetree BrowsingEdit
 	project gives you a "project" view of files, rather than a straight file system view
 	ide Tracks files status (open/edited/closed/read only) within a project with icons; automatically builds and updates syntax highlight rules based on the project files (C/C++/Java); avoids buffer duplication.
-	:help netrw for information about the explorer distributed with Vim. It does not display files in a tree by default, but can by using the g:netrw_liststyle option. It also offers useful file-sorting options (by date, size, name).
+	netrw - for information about the explorer distributed with Vim. It does not display files in a tree by default, but can by using the g:netrw_liststyle option. It also offers useful file-sorting options (by date, size, name).
 	Luc Hermitte's local_vimrc, Markus "embear" Braun's local_vimrc
+
 	Tim Pope's 	NERDTree - tree based file explorer 
 	vtreeexplorer -  tree based file explorer 
 	vim-projectionist - projections project managment

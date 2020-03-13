@@ -17,11 +17,9 @@
     plugin
 //scripts loaded last
     after
-
 //scipts loaded by manual :packadd
     pack
 
-
 //nvim differences
     //config $XDG_CONFIG_HOME/nvim/init.vim, instead of ~/.vimrc
-    //config dir $XDG_CONFIG_HOME/nvim (generally ~/.config/nvim), instead of than ~/.vim 
+    //config dir $XDG_CONFIG_HOME/nvim, instead of than ~/.vim 
