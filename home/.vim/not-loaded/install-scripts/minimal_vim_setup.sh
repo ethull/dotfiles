@@ -5,5 +5,3 @@ git clone https://github.com/jistr/vim-nerdtree-tabs.git
 
 mkdir -p ~/.vim/pack/default/start
 git clone https://github.com/sheerun/vim-polyglot ~/.vim/pack/default/start/vim-polyglot
-
-

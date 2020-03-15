@@ -99,6 +99,11 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 "Plug 'gabrielelana/vim-markdown'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
+" latex
+Plug 'lervag/vimtex'
+"Plug 'vim-latex/vim-latex'
+
+
 "multi language autocomplete
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
 

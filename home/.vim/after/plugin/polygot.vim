@@ -1,6 +1,8 @@
 " Syntax highlight
-" Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
+
+" default highlight is better than polyglot
+" latex-box not needed as vimtex used
+let g:polyglot_disabled = ['python', 'latex']
 let python_highlight_all = 1
 
 

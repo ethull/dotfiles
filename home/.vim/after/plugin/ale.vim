@@ -15,7 +15,8 @@ let g:ale_linters_explicit = 1
     \'c': ['clang','gcc'],
     \'markdown': ['markdownlint'],
     \'vimwiki': ['markdownlint'],
-    \'html': ['htmlhint']
+    \'html': ['htmlhint'],
+    \'tex': ['chktex', 'lacheck']
     \})
 " can use eslint or prettier for web languages
 :call extend(g:ale_fixers, {
