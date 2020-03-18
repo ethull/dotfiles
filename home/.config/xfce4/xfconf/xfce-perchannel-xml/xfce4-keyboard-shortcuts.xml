@@ -40,10 +40,10 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Alt&gt;bracketleft" type="string" value="mocp --toggle-pause"/>
       <property name="&lt;Alt&gt;bracketright" type="string" value="mocp --toggle shuffle"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;braceleft" type="string" value="mocp --next"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;braceright" type="string" value="mocp --previous"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;greater" type="string" value="mocp --seek +10"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;less" type="string" value="mocp --seek -10"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;braceright" type="string" value="mocp --next"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;braceleft" type="string" value="mocp --previous"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
