@@ -1,0 +1,843 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'b
+	/home/emera/bin/
+	..
+1583491321
+'h
+	/home/emera/
+	..
+1583491321
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/emera/.vim/config
+	plug.vim
+3
+d/home/emera/consistent/Iu/test/texxytex
+	test.tex
+1
+d/home/emera/consistent/files/kent/material/term2/OOP2-C0520/gc/assign3
+	chasing-bombs-eh443.zip
+4
+d/home/emera
+	consistent
+24
+d/home/emera/consistent
+	files
+2
+d/home/emera/consistent/files
+	txt-files
+3
+d/home/emera/consistent/files/txt-files
+	wiki
+7
+d/home/emera/consistent/files/txt-files/wiki
+	guides
+2
+d/home/emera/consistent/files/txt-files/wiki/guides
+	windows
+4
+d/home/emera/consistent/files/txt-files/wiki/guides/windows
+	linux_integration.md
+3
+d/home/emera
+	Downloads
+3
+d/home/emera/Downloads
+	BlueJ-linux-422.deb
+4
+d/home/emera/consistent/files/txt-files/Iu-txts
+	github.md
+4
+d/home/emera/consistent/files/txt-files
+	Iu-txts
+2
+d/home/emera/consistent/files
+	txt-files
+3
+d/home/emera/consistent
+	projects
+4
+d/home/emera/consistent/projects
+	code-challenges
+4
+d/home/emera/consistent/projects/code-challenges
+	..
+0
+d/home/emera/consistent/projects
+	code-summaries
+5
+d/home/emera/consistent/projects/code-summaries
+	Iu
+1
+d/home/emera/consistent/projects/code-summaries/Iu
+	jdk7u-jdk
+1
+d/home/emera
+	consistent
+4
+d/home/emera/consistent
+	Iu
+1
+d/home/emera/consistent/Iu
+	code
+3
+d/home/emera/consistent/Iu/code
+	..
+0
+d/home/emera/consistent/Iu
+	test
+4
+d/home/emera/consistent/Iu/test
+	texxytex
+1
+d/home/emera/consistent/Iu/test/texxytex
+	latex
+1
+d/home/emera/consistent/Iu/test/texxytex/latex
+	simple.tex
+20
+d/home/emera/consistent/Iu/test
+	..
+0
+d/home/emera/consistent/Iu
+	test
+4
+d/home/emera/consistent
+	files
+2
+d/home/emera/consistent/files
+	kent
+1
+d/home/emera/consistent/files/kent
+	material
+1
+d/home/emera/consistent/files/kent/material
+	term2
+3
+d/home/emera/consistent/files/kent/material/term2
+	databases-and-the-web-C0323
+2
+d/home/emera/consistent/files/kent/material/term2/databases-and-the-web-C0323
+	..
+0
+d/home/emera/consistent/files/kent/material/term2
+	foundations-of-computing2-CO322
+3
+d/home/emera/consistent/files/kent/material/term2/foundations-of-computing2-CO322
+	..
+0
+d/home/emera/consistent/files/kent/material/term2
+	foundations-of-computing2-CO322
+3
+d/home/emera/consistent/files/kent/material/term2/foundations-of-computing2-CO322
+	pdf
+1
+d/home/emera/consistent/files/kent/material/term2
+	foundations-of-computing2-CO322
+3
+d/home/emera/consistent/files/kent/material/term2/foundations-of-computing2-CO322
+	pdf
+1
+d/home/emera/consistent/files/kent/material/term2
+	foundations-of-computing2-CO322
+3
+d/home/emera/consistent/files/kent/material/term2/foundations-of-computing2-CO322
+	pdf
+1
+d/home/emera/consistent/files/kent/material/term2
+	latex
+4
+d/home/emera/consistent/files/kent/material/term2/latex
+	..
+0
+d/home/emera/consistent/files/kent/material/term2
+	problem-solving-with-algorithms-C0383
+5
+d/home/emera/consistent/files/kent/material/term2/problem-solving-with-algorithms-C0383
+	..
+0
+d/home/emera/consistent/files/kent/material/term2
+	databases-and-the-web-C0323
+2
+d/home/emera/consistent/files/kent/material/term2/databases-and-the-web-C0323
+	gc
+2
+d/home/emera/consistent/files/kent/material/term2/databases-and-the-web-C0323/gc
+	assign2
+2
+d/home/emera/consistent/files/kent/material/term2/databases-and-the-web-C0323/gc/assign2
+	queries.sql
+3
+d/home/emera
+	consistent
+4
+d/home/emera/consistent
+	files
+2
+d/home/emera/consistent/files
+	txt-files
+3
+d/home/emera/consistent/files/txt-files
+	Iu-txts
+2
+d/home/emera/consistent/files/txt-files/Iu-txts
+	iu
+1
+d/home/emera/consistent/files/txt-files/Iu-txts/iu
+	IU.txt
+1
+d/home/emera/consistent/files/txt-files/Iu-txts
+	todo.md
+13
+d/mnt
+	storage
+2
+d/mnt/storage
+	consistent
+4
+d/mnt/storage/consistent
+	files
+2
+d/mnt/storage/consistent/files
+	media
+5
+d/mnt/storage/consistent/files/media
+	music
+1
+d/mnt/storage/consistent/files/media/music
+	Iu
+1
+d/mnt/storage/consistent/files/media/music/Iu
+	03 Wonderwall.mp3
+2
+d/home/emera/consistent/files/kent/material/term2/latex
+	math5.tex
+16
+d/home/emera/consistent/files/kent/material/term2
+	latex
+4
+d/mnt
+	storage
+2
+d/mnt/storage
+	consistent
+4
+d/mnt/storage/consistent
+	files
+2
+d/mnt/storage/consistent/files
+	media
+5
+d/mnt/storage/consistent/files/media
+	music
+1
+d/mnt/storage/consistent/files/media/music
+	Iu
+1
+d/mnt/storage/consistent/files/media/music/Iu
+	03 Wonderwall.mp3
+2
+d/home/emera
+	consistent
+4
+d/mnt/storage/consistent/files/media/music/Iu
+	Skyline - Kovan _ Electro-Light.mp3
+4
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/technologies
+	..
+0
+d/home/emera/consistent/files/txt-files/wiki/guides/dev
+	languages
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages
+	scripting
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	python
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python
+	..
+0
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	js
+1
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/js
+	scripts
+3
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	python
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python
+	libraries-examples
+1
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python/libraries-examples
+	..
+0
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python
+	libraries-examples
+1
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	ruby
+3
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/ruby
+	..
+0
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	python
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python
+	virtualenv.md
+4
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	ruby
+3
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/ruby
+	..
+0
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	python
+2
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/python
+	virtualenv.md
+4
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting
+	ruby
+3
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/scripting/ruby
+	ruby_cmds.md
+1
+d/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/static-typed/c
+	c_cmds.md
+1
+d
+
+# Right window history (oldest to newest):
+D/home/emera/consistent
+	programs
+3
+D/home/emera/consistent/programs
+	multiboot
+3
+D/home/emera/consistent/programs/multiboot
+	YUMI-UEFI-0.0.2.0.exe
+2
+D/home/emera
+	..
+0
+D/mnt/storage/consistent/files/media/music/Iu
+	..
+0
+D/mnt/storage/consistent/files/media/music
+	Iu
+1
+D/mnt/storage/consistent/files/media
+	music
+1
+D/mnt/storage/consistent/files/media/music
+	organised-music
+2
+D/mnt/storage/consistent/files/media/music/organised-music
+	anime-songs
+3
+D/mnt/storage/consistent/files/media/music/organised-music/anime-songs
+	mha you say run remix - ft wispx.mp3
+21
+D/home
+	emera
+1
+D/home/emera
+	consistent
+4
+D/home/emera/consistent
+	projects
+4
+D/home/emera/consistent/projects
+	dotfiles
+6
+D/home/emera/consistent/projects/dotfiles
+	old
+2
+D/home/emera/consistent/projects
+	dotfiles
+6
+D/home/emera/consistent/projects/dotfiles
+	old
+2
+D/home/emera/consistent/projects/dotfiles/old
+	.vim
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim
+	not-loaded
+5
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim
+	not-loaded
+5
+D/home/emera/consistent/projects/dotfiles/old
+	.vim
+1
+D/home/emera/consistent/projects/dotfiles
+	home
+2
+D/home/emera/consistent/projects/dotfiles/home
+	.vim
+5
+D/home/emera/consistent/projects/dotfiles/home/.vim
+	session
+6
+D/home/emera/consistent/projects/dotfiles/home
+	.vim
+5
+D/home/emera/consistent/projects/dotfiles
+	home
+2
+D/home/emera/consistent/projects/dotfiles/home
+	.vim
+5
+D/home/emera/consistent/projects/dotfiles/home/.vim
+	session
+6
+D/home/emera/consistent/projects/dotfiles/home
+	.profile
+7
+D/home/emera/consistent/projects/dotfiles
+	old
+3
+D/home/emera/consistent/projects/dotfiles/old
+	.vim
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim
+	not-loaded
+5
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs
+	lsp-setup
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup
+	ale-client
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs
+	lsp-setup
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	install-scripts
+2
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/install-scripts
+	..
+0
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs
+	lsp-setup
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup
+	ale-client
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup/ale-client
+	supported-servers.txt
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup
+	cocnvim-client
+2
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup/cocnvim-client
+	supported_servers.txt
+2
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs/lsp-setup
+	ale-client
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs
+	plugin_summaries.txt
+5
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim
+	not-loaded
+5
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded/docs
+	lsp-setup
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim/not-loaded
+	docs
+1
+D/home/emera/consistent/projects/dotfiles/old/.vim
+	not-loaded
+5
+D/home/emera/consistent/projects/dotfiles/old
+	.vim
+1
+D/home/emera/consistent/projects/dotfiles
+	old
+3
+D/home/emera/consistent/projects
+	dotfiles
+6
+D/home/emera/consistent
+	projects
+4
+D/home/emera
+	consistent
+24
+D/home
+	emera
+1
+D/home/emera
+	Downloads
+3
+D/home/emera/Downloads
+	malware
+4
+D/home/emera/Downloads/malware
+	..
+0
+D/home/emera/Downloads
+	malware
+4
+D/home/emera/Downloads/malware
+	Practical.Vim.2nd.Edition.2015.10.pdf
+1
+D/home/emera/Downloads
+	porberly
+5
+D/home/emera/Downloads/porberly
+	..
+0
+D/home/emera/Downloads
+	porberly
+5
+D/home/emera/Downloads/porberly
+	..
+0
+D/home/emera/Downloads
+	malware
+4
+D/home/emera/Downloads/malware
+	vim.pdf
+2
+D/home/emera/Downloads
+	malware
+4
+D/home/emera/Downloads/malware
+	Practical.Vim.2nd.Edition.2015.10.pdf
+1
+D/home/emera/Downloads
+	..
+0
+D/mnt/storage/consistent/files/media/music/Iu
+	..
+0
+D/mnt/storage/consistent/files/media/music
+	to-add-phone
+5
+D/mnt/storage/consistent/files/media/music/to-add-phone
+	..
+0
+D/mnt/storage/consistent/files/media/music
+	to-add-phone
+5
+D/mnt/storage/consistent/files/media/music/to-add-phone
+	backup
+1
+D/mnt/storage/consistent/files/media/music/to-add-phone/backup
+	..
+0
+D/mnt/storage/consistent/files/media/music/to-add-phone
+	backup
+1
+D/mnt/storage/consistent/files/media/music/to-add-phone/backup
+	zayn - Dusk Till Dawn - (ft Sia).mp3
+44
+D/mnt/storage/consistent/files/media/music/to-add-phone
+	backup
+1
+D/mnt/storage/consistent/files/media/music
+	organised-music
+2
+D/mnt/storage/consistent/files/media/music/organised-music
+	anime-songs
+3
+D/mnt/storage/consistent/files/media/music
+	other-sources
+3
+D/mnt/storage/consistent/files/media/music/other-sources
+	gavins-stick
+3
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick
+	Oasis
+15
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick/Oasis
+	(What's the Story) Morning Glory-
+1
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick/Oasis/(What's the Story) Morning Glory-
+	03 Wonderwall.mp3
+4
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick/Oasis
+	(What's the Story) Morning Glory-
+1
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick
+	Now, Vol. 50 [UK] Disc 1
+13
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick/Now, Vol. 50 [UK] Disc 1
+	16 A Little Respect.mp3
+16
+D/mnt/storage/consistent/files/media/music/other-sources/gavins-stick
+	Now, Vol. 50 [UK] Disc 1
+13
+D/mnt/storage/consistent/files/media/music/other-sources
+	gavins-stick
+3
+D/mnt/storage/consistent/files/media/music
+	organised-music
+2
+D/mnt/storage/consistent/files/media/music/organised-music
+	1990s
+2
+D/mnt/storage/consistent/files/media/music/organised-music/1990s
+	backstreet boys - i want it that way.mp3
+2
+D/mnt/storage/consistent/files/media/music/organised-music
+	1980s
+1
+D/mnt/storage/consistent/files/media/music/organised-music/1980s
+	bonnie tyler - holding out for a hero.mp3
+4
+D/mnt/storage/consistent/files/media/music/organised-music
+	1980s
+1
+D
+
+# Command line history (oldest to newest):
+:mkdir q4-7
+:touch MathsOperations.java
+:touch notes/md
+:touch notes.md
+:touch 14-9
+:mkdir q4-9
+:s
+:mkdir inspiration
+:touch job4.txt
+:touch _absrt.md
+:mkdir latex
+:mkdir texxytex
+:touch interview_prep.md
+:touch tex.vi
+:media
+:mkdir nani
+:rename
+:touch test.tex
+:test
+:touch test.py
+:touch test.js
+:touch go_cmds.md
+:mkdir markup
+:mkdir scripting
+:mkdir compiled
+:mkdir dart
+:mkdir
+:mkdir go
+:mkdir tools
+:mkdir ReDoS-check
+:touch notes.txt
+:touch projects
+:mkdir projects
+:! pwd | xsel -b
+:mkdir huntr
+:! git clone https://github.com/ethull/ansi2html
+:mkdir modules
+:! git clone https://github.com/davisjam/vuln-regex-detector
+:mkdit tk
+:mkdir tk
+:! git clone https://github.com/ethull/NotepadTK
+:Cd ~
+:cd ~
+:mkdir apache
+:mkdir bios-files
+:mkdir emulation
+:mkdir multiboot
+:cd k
+:mkdir nnn
+:Q
+:cd /mnt
+:synx
+:touch README.md
+:cd .vim
+:touch linux_integration.md
+:mkdir porberly malware
+:sync
+:q
+:mkdir ruby
+:touch
+:tou
+:touch ruby_cmds.md
+
+# Search history (oldest to newest):
+/git
+/you say
+/pdf
+
+# Prompt history (oldest to newest):
+pJack Cunliffe - Nonmedical prescription psychiatric drug use and the darknet.pdf
+pOReilly.Learning.The.Vi.And.Vim.Editors.7th.Edition.Jul.2008.ISBN.059652983X.pdf
+pq4-9
+pjava_concepts.md
+pjob6.md
+pterrible_cv.pdf
+pold_CVs
+pmain_CV_resources
+pscrappedStuff.txt
+pworkstuff_sheet.txt
+pcert_summary.txt
+pcert_summary.md
+ptex.vim
+pcv-docs
+papprenticeship_talk_2018.pptx
+pCV_GCSE_chis.pdf
+pCV_GCSE_office.pdf
+pCV_GCSE_hurst_aqa.pdf
+pCV_GCSE_hurst_ocr.pdf
+pCV_WE_abc.pdf
+pCV_WE_abc_full.pdf
+pCV_GCSE_full.pdf
+pcertificate-b992f153-243e-4a31-98cc-7be7bd33dede.png
+pCV.pdf
+pbryan-jenks.pdf
+pgav_hullett.doc
+pdevon-stank.pdf
+pjava_cmds.txt
+pstatic-typed
+pRedod-check
+predos-check
+pdebian11.png
+psimple_test.js
+pnotes
+pnotes.md
+pmha jet set run.mp3
+pvimscript.txt
+p.md
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/mnt/storage/consistent/files/media/music/organised-music/1990s/backstreet boys - i want it that way.mp3
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/emera/.local/share/vifm/Trash/000_plugged
+	/home/emera/consistent/projects/dotfiles/home/.vim/plugged
+t/home/emera/.local/share/vifm/Trash/000_vfm
+	/home/emera/vfm
+t/mnt/storage/.vifm-Trash-1000/000_YUMI-2.0.6.9.exe
+	/mnt/storage/iso-files/multi-boot-tools/YUMI-2.0.6.9.exe
+t/mnt/storage/.vifm-Trash-1000/000_multibootusb-9.2.0.tar.gz
+	/mnt/storage/iso-files/multi-boot-tools/multibootusb-9.2.0.tar.gz
+t/mnt/storage/.vifm-Trash-1000/000_python3-multibootusb_9.2.0-1_all.deb
+	/mnt/storage/iso-files/multi-boot-tools/python3-multibootusb_9.2.0-1_all.deb
+t/home/emera/.local/share/vifm/Trash/000_sessions
+	/home/emera/consistent/projects/dotfiles/home/.vim/sessions
+t/home/emera/.local/share/vifm/Trash/000_q3.vim
+	/home/emera/consistent/projects/dotfiles/home/.vim/session/q3.vim
+t/home/emera/.local/share/vifm/Trash/000_modules
+	/home/emera/consistent/projects/huntr/modules
+t/home/emera/.local/share/vifm/Trash/000_projects
+	/home/emera/consistent/projects/huntr/projects
+t/home/emera/.local/share/vifm/Trash/000_web-languages
+	/home/emera/consistent/files/txt-files/wiki/guides/dev/languages/web-languages
+t/home/emera/.local/share/vifm/Trash/000_gay.tex
+	/home/emera/consistent/Iu/test/gay.tex
+t/home/emera/.local/share/vifm/Trash/000_gayyo.tex
+	/home/emera/consistent/Iu/test/gayyo.tex
+t/mnt/storage/.vifm-Trash-1000/000_what
+	/mnt/storage/consistent/files/documents/job/cv-docs/what
+t/mnt/storage/.vifm-Trash-1000/000_samples
+	/mnt/storage/consistent/files/documents/job/cv-docs/samples
+t/home/emera/.local/share/vifm/Trash/003_test.aux
+	/home/emera/consistent/Iu/test/texxytex/test.aux
+t/home/emera/.local/share/vifm/Trash/000_test.fdb_latexmk
+	/home/emera/consistent/Iu/test/texxytex/test.fdb_latexmk
+t/home/emera/.local/share/vifm/Trash/000_test.fls
+	/home/emera/consistent/Iu/test/texxytex/test.fls
+t/home/emera/.local/share/vifm/Trash/003_test.log
+	/home/emera/consistent/Iu/test/texxytex/test.log
+t/home/emera/.local/share/vifm/Trash/000_nai2.txt
+	/home/emera/consistent/Iu/test/texxytex/nai2.txt
+t/home/emera/.local/share/vifm/Trash/000_nani.tex
+	/home/emera/consistent/Iu/test/texxytex/nani.tex
+t/home/emera/.local/share/vifm/Trash/000_porberly
+	/home/emera/Downloads/porberly
+t/home/emera/.local/share/vifm/Trash/000_vim.pdf
+	/home/emera/Downloads/malware/vim.pdf
+t/home/emera/.local/share/vifm/Trash/000_malware
+	/home/emera/consistent/files/txt-files/Iu-txts/malware
+t/home/emera/.local/share/vifm/Trash/000_malware
+	/home/emera/Downloads/malware
+t/home/emera/.local/share/vifm/Trash/000_texxytex
+	/home/emera/consistent/Iu/test/texxytex
+t/mnt/storage/.vifm-Trash-1000/000_Distrion & Cediv - Dohi.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Distrion & Cediv - Dohi.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Busted - Shipwrecked In Atlantis.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Busted - Shipwrecked In Atlantis.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Elektronomia - Summersong.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Elektronomia - Summersong.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Ennex & Linne - Sunset (feat. Axel Wernberg) [Epic Vibes Release].mp3
+	/mnt/storage/consistent/files/media/music/Iu/Ennex & Linne - Sunset (feat. Axel Wernberg) [Epic Vibes Release].mp3
+t/mnt/storage/.vifm-Trash-1000/000_Gym Class Heroes ft Ryan Tedder - The Fighter.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Gym Class Heroes ft Ryan Tedder - The Fighter.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Hyper Potions & Subtact - Adventures.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Hyper Potions & Subtact - Adventures.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Hyper Potions - Railway Life.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Hyper Potions - Railway Life.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Hyper Potions - Tropical Resort (Sonic Colors Remix).mp3
+	/mnt/storage/consistent/files/media/music/Iu/Hyper Potions - Tropical Resort (Sonic Colors Remix).mp3
+t/mnt/storage/.vifm-Trash-1000/000_Hyper Potions ft Nokae - Expedition.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Hyper Potions ft Nokae - Expedition.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Hyper Potions ft VGR - Sherbet Land.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Hyper Potions ft VGR - Sherbet Land.mp3
+t/mnt/storage/.vifm-Trash-1000/000_JuicyTrax & Switch Off feat. Amber Revival - Waterfall.mp3
+	/mnt/storage/consistent/files/media/music/Iu/JuicyTrax & Switch Off feat. Amber Revival - Waterfall.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Logic - 1-800-273-8255 ft. Alessia Cara, Khalid.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Logic - 1-800-273-8255 ft. Alessia Cara, Khalid.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Marshmello ft YUNGBLUD - Tongue Tied.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Marshmello ft YUNGBLUD - Tongue Tied.mp3
+t/mnt/storage/.vifm-Trash-1000/000_OneRepublic - Kids .mp3
+	/mnt/storage/consistent/files/media/music/Iu/OneRepublic - Kids .mp3
+t/mnt/storage/.vifm-Trash-1000/000_Tobu - Joy.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Tobu - Joy.mp3
+t/mnt/storage/.vifm-Trash-1000/000_Tobu - Let's Go.mp3
+	/mnt/storage/consistent/files/media/music/Iu/Tobu - Let's Go.mp3
+t/home/emera/.local/share/vifm/Trash/000_MyStack.java
+	/home/emera/consistent/files/kent/material/term2/problem-solving-with-algorithms-C0383/gc/lab2/programming/MyStack.java
+t/home/emera/.local/share/vifm/Trash/000_q4-9
+	/home/emera/consistent/files/kent/material/term2/problem-solving-with-algorithms-C0383/gc/lab2/programming/q4-9
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
