@@ -1,1 +1,6 @@
 old
+.vim/plugged
+.moc/cache
+.moc/pid
+.config/vifm/vifminfo
+*.swp

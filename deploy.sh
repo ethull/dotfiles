@@ -1,7 +1,7 @@
-PATH=$(pwd)
+path=$(pwd)
 
 # home
-ln -sf $PATH/.bashrc $HOME/.bashrc
+ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.profile $HOME/.profile
 ln -sf $path/.Xresources $HOME/.Xresources
 ln -sf $path/.Xsession $HOME/.Xsession
@@ -11,26 +11,26 @@ ln -sf $path/.Xprofile $HOME/.Xprofile
 # xdg config
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-[ -d $HOME/.vim/vimrc ] && rm -r $HOME/.vim/vimrc
-ln -sf $PATH/.vim/vimrc $HOME/.vim/vimrc
+[ -d $HOME/.vim ] && rm -r $HOME/.vim
+ln -sf $path/.vim $HOME/.vim
 
-[ -d $HOME/.moc/config ] && rm -r $HOME/.moc/config
-ln -sf $PATH/.moc/config $HOME/.moc/config 
+[ -d $HOME/.moc ] && rm -r $HOME/.moc
+ln -sf $path/.moc $HOME/.moc
 
 #tmux only reads $HOME/.tmux.conf
-[ -d $HOME/.tmux.conf ] && rm -r $HOME/.tmux.conf
-[ -d $HOME/.config/tmux/tmux.conf ] && rm -r $HOME/.config/tmux/tmux.conf
-ln -sf $PATH/.config/tmux/tmux.conf $HOME/.tmux.conf
+[ -f $HOME/.tmux.conf ] && rm -r $HOME/.tmux.conf
+[ -d $HOME/.config/tmux ] && rm -r $HOME/.config
+ln -sf $path/.tmux.conf $HOME/.tmux.conf
 
-[ -d $HOME/.vifm/vifmrc ] && rm -r $HOME/.vifm/vifmrc
-ln -sf $PATH/.vifm/vifmrc $HOME/.vifm/vifmrc
+[ -d $HOME/.config/vifm ] && rm -r $HOME/.config/vifm
+ln -sf $path/.config/vifm $HOME/.config/vifm
 
 [ ! -d $HOME/.local ] && mkdir $HOME/.local
 [ ! -d $HOME/.local/bin ] && mkdir $HOME/.local/bin
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
 
 
-ln -sf $PATH/.local/bin/dsxiv $HOME/.local/bin/dsxiv
-ln -sf $PATH/.local/bin/copy $HOME/.local/bin/copy
+ln -sf $path/.local/bin/dsxiv $HOME/.local/bin/dsxiv
+ln -sf $path/.local/bin/copy $HOME/.local/bin/copy
 [ -d $HOME/.local/share/applications ] && rm -r $HOME/.local/share/applications
-ln -sf $PATH/.local/share/applications $HOME/.local/share/applications
+ln -sf $path/.local/share/applications $HOME/.local/share/applications
