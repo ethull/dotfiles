@@ -21,6 +21,7 @@ ln -sf $path/.moc $HOME/.moc
 [ -f $HOME/.tmux.conf ] && rm -r $HOME/.tmux.conf
 [ -d $HOME/.config/tmux ] && rm -r $HOME/.config
 ln -sf $path/.tmux.conf $HOME/.tmux.conf
+ln -sf $path/.config/tmux $HOME/.config/tmux
 
 [ -d $HOME/.config/vifm ] && rm -r $HOME/.config/vifm
 ln -sf $path/.config/vifm $HOME/.config/vifm

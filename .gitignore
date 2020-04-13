@@ -2,5 +2,7 @@ old
 .vim/plugged
 .moc/cache
 .moc/pid
+.moc/softmixer
+.moc/last_directory
 .config/vifm/vifminfo
 *.swp
