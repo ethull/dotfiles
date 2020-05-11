@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-# runs when a DM or startx/xinit logs you into a graphical session

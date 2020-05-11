@@ -7,14 +7,14 @@ set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
 
-" The Silver Searcher
+"use custim search program if avaliable
+"" The Silver Searcher
 if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
-
-" ripgrep
+"" ripgrep
 if executable('rg')
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
   set grepprg=rg\ --vimgrep
@@ -22,12 +22,7 @@ if executable('rg')
 endif
 
 nnoremap <silent> <leader>fzm :FZF -m<CR>
-"Recovery commands from history through FZF
-nmap <leader>y :History:<CR>
-
-
-
-
-
-
-
+" hostory cmds for files/cmds/searches
+nmap <leader>hf :History<CR>
+nmap <leader>hc :History:<CR>
+nmap <leader>h/ :History/<CR>

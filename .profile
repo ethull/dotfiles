@@ -25,6 +25,9 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+set -o vi
+
 export EDITOR="vim"
 export VISUAL="vim"
 export TERMINAL="xfce4-terminal"

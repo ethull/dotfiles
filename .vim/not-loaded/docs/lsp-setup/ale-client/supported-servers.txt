@@ -1,0 +1,22 @@
+c
+    ccls
+        system setup
+        vimrc setup
+            https://github.com/MaskRay/ccls/wiki/ALE
+java
+    georgewfraser/java-language-server    
+        system setup
+            cd ~/.vim/manual-setup/language-servers
+            git clone https://github.com/georgewfraser/java-language-server.git         
+            cd java-language-server                                                     
+            scripts/link_linux.sh    
+        vimrc setup
+            let g:ale_java_javalsp_executable = ~/.vim/manual-setup/language-servers/java-language-server/dist/linux/bin/launcher
+
+
+bash
+    bash-language-server
+        system setup
+            npm i -g javascript-typescript-langserver
+        vimrc setup    
+            https://github.com/mads-hartmann/bash-language-server 

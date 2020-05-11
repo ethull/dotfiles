@@ -55,22 +55,27 @@ nnoremap <silent> <leader>b :Buffers<CR>
 " uncomment below to join selection and unamed clipboards
 "if has('unnamedplus')
 "  set clipboard=unnamed,unnamedplus
-noremap YY "+y<CR>
-noremap <leader>p "+gP<CR>
-noremap XX "+x<CR>
+"
+"noremap YY "+y<CR>
+"noremap <leader>p "+gP<CR>
+"noremap XX "+x<CR>
 " consider noremap PP "+P<CR>
-
-" remap visual block mode
-noremap <space>v <C-v>
 
 " in normal mode ctrl-x/ctrl-c/ctrl-v use the global register (use normal y and p for unamed)
 noremap <C-x> "+x
 noremap <C-c> "+y
 noremap <C-v> "+P
 
+noremap <Leader>x "+x<CR>
+noremap <Leader>y "+y<CR>
+noremap <Leader>p "+P<CR>
+
 " in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
 inoremap <C-c> <NOP>
 inoremap <C-v> <C-r>"
+
+" remap visual block mode
+noremap <space>v <C-v>
 
 "if has('macunix')
 "  " pbcopy for OSX copy/paste
@@ -96,5 +101,3 @@ vmap > >gv
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
-

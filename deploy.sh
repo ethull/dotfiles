@@ -19,7 +19,7 @@ ln -sf $path/.moc $HOME/.moc
 
 #tmux only reads $HOME/.tmux.conf
 [ -f $HOME/.tmux.conf ] && rm -r $HOME/.tmux.conf
-[ -d $HOME/.config/tmux ] && rm -r $HOME/.config
+[ -d $HOME/.config/tmux ] && rm -r $HOME/.config/tmux
 ln -sf $path/.tmux.conf $HOME/.tmux.conf
 ln -sf $path/.config/tmux $HOME/.config/tmux
 

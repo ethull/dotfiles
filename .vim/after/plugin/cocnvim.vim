@@ -46,41 +46,6 @@ let g:coc_global_extensions = [
 "\ 'coc-prettier', 
  
 "coc.nvim 
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-"xmap <leader>a  <Plug>(coc-codeaction-selected)
-"nmap <leader>a  <Plug>(coc-codeaction-selected)
-" Remap for do codeAction of current line
-"nmap <leader>ac  <Plug>(coc-codeaction)
-" Fix autofix problem of current line
-"nmap <leader>qf  <Plug>(coc-fix-current)
-" Create mappings for function text object, requires document symbols feature of languageserver.
-"xmap if <Plug>(coc-funcobj-i)
-"xmap af <Plug>(coc-funcobj-a)
-"omap if <Plug>(coc-funcobj-i)
-"omap af <Plug>(coc-funcobj-a)
-" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
-"nmap <silent> <C-d> <Plug>(coc-range-select)
-"xmap <silent> <C-d> <Plug>(coc-range-select)
-
-" Using CocList
-" Show all diagnostics
-"nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions
-"nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-" Show commands
-"nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
-"nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols
-"nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-"nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-"nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list
-"nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-"call CocActionAsync('jumpDefinition')
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
@@ -98,5 +63,62 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
 
+" keymaps
+
 " Use enter to accept snippet expansion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
+
+"" coc multiple cursors
+"nmap <silent> <Leader>ccp <Plug>(coc-cursors-position)
+nmap <silent> <Leader>cw <Plug>(coc-cursors-word)
+xmap <silent> <Leader>cw <Plug>(coc-cursors-range)
+"nmap <leader>co  <Plug>(coc-cursors-operator)
+nmap <silent> <Leader>crn :CocCommand document.renameCurrentWord<CR>
+"nmap <Leader>crn <Plug>(coc-rename)
+
+"" code actions
+"Remap for do codeAction of current line
+"nmap <leader>ac  <Plug>(coc-codeaction)
+"Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+"xmap <Leader>cas  <Plug>(coc-codeaction-selected)
+"nmap <Leader>cas  <Plug>(coc-codeaction-selected)
+
+" Fix autofix problem of current line
+"nmap <leader>qf  <Plug>(coc-fix-current)
+
+"" custom func bindings
+"Create mappings for function text object, requires document symbols feature of languageserver.
+"xmap if <Plug>(coc-funcobj-i)
+"xmap af <Plug>(coc-funcobj-a)
+"omap if <Plug>(coc-funcobj-i)
+"omap af <Plug>(coc-funcobj-a)
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+"nmap <silent> <C-d> <Plug>(coc-range-select)
+"xmap <silent> <C-d> <Plug>(coc-range-select)
+
+"" CocList
+" Show all diagnostics
+"nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions
+nnoremap <silent> <Leader>ce  :<C-u>CocList extensions<cr>
+" Show commands
+nnoremap <silent> <Leader>cc  :<C-u>CocList commands<cr>
+" Find symbol of current document
+"nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols
+"nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+"nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+"nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list
+"nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+"call CocActionAsync('jumpDefinition')
+" move to definitions
+nmap <Leader>cd <Plug>(coc-definition)
+nmap <Leader>ct <Plug>(coc-type-definition)
+nmap <Leader>crf <Plug>(coc-references)
+"" jump between errs
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)

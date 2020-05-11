@@ -1,0 +1,66 @@
+" navigation ------------------------------
+" tree ----
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+
+" buffer/file browsing edit ----
+ if isdirectory('/usr/local/opt/fzf')
+  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+else
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'   
+Plug 'vim-scripts/grep.vim'
+
+" dev -------------------------------
+" tools ----
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+Plug 'majutsushi/tagbar'
+Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+
+" linter manager ----
+Plug 'w0rp/ale'
+
+" autcomplete ----
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
+
+" language packs ----
+Plug 'sheerun/vim-polyglot'
+" c
+Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
+Plug 'ludwig/split-manpage.vim'
+" html
+Plug 'hail2u/vim-css3-syntax'
+"preview colours
+Plug 'gorodinskiy/vim-coloresque'
+"updated haml n sass runtime files
+Plug 'tpope/vim-haml'
+" expand abbreviations
+Plug 'mattn/emmet-vim'
+" javascript
+Plug 'jelera/vim-javascript-syntax'
+
+" lsp client ----
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" text manipulation -------------------------
+Plug 'tpope/vim-commentary'
+Plug 'Yggdroot/indentLine'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" Ui ----------------------
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/CSApprox'
+Plug 'luochen1990/rainbow'
+Plug 'tomasr/molokai'
+
+" other
+Plug 'avelino/vim-bootstrap-updater'
+
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+Plug 'christoomey/vim-tmux-navigator'
+

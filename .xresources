@@ -1,4 +1,4 @@
-! xrdb ~/.Xresources
+! xrdb ~/.xresources
 xterm*scrollBar: true
 xterm*rightScrollBar: true
 xterm*title: XTerm

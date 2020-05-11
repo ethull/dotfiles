@@ -1,0 +1,11 @@
+java language server
+//problems JAVA_HOME must point to JDK and not JDK/bin 
+    //JAVA_HOME=usr/lib/jvm/java-11-openjdk/bin;/usr/lib/jvm/java-11-openjdk
+
+Error: /usr/lib/jvm/java-11-openjdk/bin/java exited with code: 13
+    //multiple causes
+        https://github.com/neoclide/coc-java/issues/20
+            :CocCommand java.clean.workspace
+            rm -r $HOME/.config/coc/extensions/coc-java-data 
+    //opening an empty java file
+    //opening file outside of projects root directory
