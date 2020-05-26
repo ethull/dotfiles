@@ -1,3 +1,7 @@
+if ! exists('g:instant_markdown_autostart')
+    finish
+endif
+
 "Uncomment to override defaults:
 "let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0

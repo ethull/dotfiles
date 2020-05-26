@@ -36,7 +36,7 @@ Plug 'christoomey/vim-tmux-navigator'
 "" appearance
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" get gvim colour schemes to work in terminal vim
+"get gvim colour schemes to work in terminal vim
 Plug 'vim-scripts/CSApprox'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
@@ -85,20 +85,25 @@ Plug 'mattn/emmet-vim'
 "Plug 'davidhalter/jedi-vim'
 "Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 """" markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 "Plug 'gabrielelana/vim-markdown'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 """" latex
 Plug 'lervag/vimtex'
 "Plug 'vim-latex/vim-latex'
-
+"""" dart
+"dart-vim-plugin/
+"flutter...
+""""ruby
+"Plug 'parkr/vim-jekyll'
 
 "" idk
 let g:make = 'gmake'
 if exists('make')
         let g:make = 'make'
 endif   
+"exe external cmds asyncronously
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
 """ notetaking
@@ -111,9 +116,7 @@ Plug 'xolox/vim-session'
 """ removed
 " update stuff installed by vim-bootstrap
 "Plug 'avelino/vim-bootstrap-updater'
-"- /home/emera/.vim/plugged/dart-vim-plugin/
 "- /home/emera/.vim/plugged/ultisnips/
-"- /home/emera/.vim/plugged/vim-jekyll/
 
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))

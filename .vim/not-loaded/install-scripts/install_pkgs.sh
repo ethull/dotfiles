@@ -1,12 +1,9 @@
 # debian
     sudo apt install -y vim-gtk3
-    sudo apt install -y nodejs npm
-
-    sudo apt install -y python3 pip3
-    sudo apt install -y openjdk-11-jdk checkstyle maven
-    sudo apt install -y clang-tools-9
-
     #==js
+    #sudo apt install -y nodejs npm
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    sudo apt-get install -y nodejs
     sudo npm i typescript -g
     sudo npm i eslint --save-dev -g
     sudo npm i standard --save-dev -g
@@ -15,19 +12,37 @@
     #==html, css
     sudo npm i htmlhint --save-dev -g
     sudo npm i prettier --save-dev -g
+    # php
+    sudo apt install php
+    wget https://cs.symfony.com/download/php-cs-fixer-v2.phar -O php-cs-fixer
+    sudo chmod a+x php-cs-fixer
+    sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
     #==python
+    sudo apt install -y python3 pip3
     sudo pip3 install pyflakes
     sudo pip3 install black
     #==c
-    sudo pacman -S gcc
-    sudo pacman -S clangd-9
+    sudo apt install -y clang-tools-9
+    sudo apt install -y gcc
     sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-9 100
     #==java
+    sudo apt install -y openjdk-11-jdk checkstyle maven
     mkdir ~/.vim/manual-setup
     mkdir ~/.vim/manual-setup/linters
     #checkstyle (java linter) is not in archs repos, download jar file and put in a launcher script for ale to find
     cd ~/.vim/manual-setup/linters
-    sudo apt install checkstyle 
+    #sudo apt install checkstyle 
+    # latex
+    sudo apt install texlive-latex-extra
+    #sudo apt install texlive-extra-utils
+    //compiler
+    sudo apt install latexmk
+    sudo apt install latexrun 
+    #sudo apt install tectonic 
+    #sudo apt install arara
+    //linter
+    sudo apt install chktex
+    sudo apt install lacheck
 
 # arch
     sudo pacman -S gvim lua

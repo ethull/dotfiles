@@ -3,8 +3,11 @@
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
+" undo stuff
+nnoremap U <C-r>
+
 "" Abbreviations
-"command line shortcuts
+"shortcuts/autocorrect
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
