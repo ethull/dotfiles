@@ -3,9 +3,10 @@ path=$(pwd)
 # home
 ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.profile $HOME/.profile
-ln -sf $path/.Xresources $HOME/.Xresources
-ln -sf $path/.Xsession $HOME/.Xsession
-ln -sf $path/.Xprofile $HOME/.Xprofile
+ln -sf $path/.xresources $HOME/.xresources
+ln -sf $path/.xsession $HOME/.xsession
+ln -sf $path/.xinitrc $HOME/.xinitrc
+ln -sf $path/.xprofile $HOME/.xprofile
 
 
 # xdg config

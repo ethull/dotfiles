@@ -24,7 +24,7 @@ let g:ale_linters_explicit = 1
 :call extend(g:ale_fixers, {
     \'*': ['remove_trailing_lines'],
     \'python': ['black'],
-    \'javascript': ['eslint'],
+    \'javascript': ['prettier'],
     \'typescript': ['prettier'],
     \'css': ['prettier'],      
     \'scss': ['prettier'], 

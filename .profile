@@ -39,6 +39,8 @@ export PATH=$PATH:~/programs/flutter/bin
 export XDG_CONFIG_HOME="$HOME/.config"
 export WIKI_PATH="$HOME/consistent/files/txt-files/wiki"
 
+# setup xterm
+xrdb ~/.xresources
 
 alias sai="sudo apt install"
 #alias sar='sudo apt remove'
