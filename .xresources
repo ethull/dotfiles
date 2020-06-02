@@ -1,14 +1,20 @@
 !xrdb ~/.xresources
 
 ! xterm
-!xterm*scrollBar: true
-!xterm*rightScrollBar: true
-xterm*title: XTerm
+xterm*locale: true
+xterm*termName: xterm-256color
+xterm*title: xterm-256
 xterm*font: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
 xterm*geometry: +0+0
 
+!xterm*scrollBar: true
+!xterm*rightScrollBar: true
+!xterm*scrollbar.width: 8
+! scrollback
+xterm*savelines: 5000
+
 xterm*foreground: #ffffff
-xterm*background: #444444
+xterm*background: #3a3a3a
 xterm*cursorColor: #ffffff
 
 xterm*renderFont: true
@@ -17,13 +23,9 @@ xterm*faceName: xft:Mononoki Nerd Font
 !xft:Monospace:style=Medium:size=12   
 xterm*faceSize: 12
 xterm*utf8: 2
-xterm*locale: true
-xterm*termName: xterm-256color
 xterm*selectToClipboard:true
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 xterm*loginshell: true
-! scrollback
-xterm*savelines: 5000
 
 ! double-click to select whole URLs :D
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48

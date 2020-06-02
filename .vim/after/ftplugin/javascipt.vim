@@ -3,9 +3,7 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-setl tabstop=4
-setl shiftwidth=4
-setl expandtab softtabstop=4
+setl tabstop=2
+setl shiftwidth=2
+setl expandtab softtabstop=2
 let g:javascript_enable_domhtmlcss = 1
-
-

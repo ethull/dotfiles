@@ -49,6 +49,8 @@ Plug 'tpope/vim-rhubarb'
 "visual repersentation of git diff
 Plug 'airblade/vim-gitgutter'
 "" programming util
+Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 "lines show indentation, alternative to following for spaces :set list lcs=tab:\|\
 Plug 'Yggdroot/indentLine'

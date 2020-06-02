@@ -63,4 +63,3 @@ Plug 'avelino/vim-bootstrap-updater'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'christoomey/vim-tmux-navigator'
-
