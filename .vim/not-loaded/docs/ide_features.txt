@@ -1,0 +1,4 @@
+find references/symbols
+jump to definition
+lint/fixers
+autocompletion

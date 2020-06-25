@@ -65,6 +65,7 @@ let g:coc_snippet_prev = '<S-Tab>'
 
 " keymaps
 
+nnoremap <leader>cr :CocRestart
 " Use enter to accept snippet expansion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
 
@@ -74,7 +75,6 @@ nmap <silent> <Leader>cw <Plug>(coc-cursors-word)
 xmap <silent> <Leader>cw <Plug>(coc-cursors-range)
 "nmap <leader>co  <Plug>(coc-cursors-operator)
 nmap <silent> <Leader>crn :CocCommand document.renameCurrentWord<CR>
-"nmap <Leader>crn <Plug>(coc-rename)
 
 "" code actions
 "Remap for do codeAction of current line
@@ -115,10 +115,16 @@ nnoremap <silent> <Leader>cc  :<C-u>CocList commands<cr>
 "nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 "call CocActionAsync('jumpDefinition')
-" move to definitions
+" goto code navigation
+"" definitions
 nmap <Leader>cd <Plug>(coc-definition)
-nmap <Leader>ct <Plug>(coc-type-definition)
+nmap <Leader>ctd <Plug>(coc-type-definition)
+nmap <leader>ci <Plug>(coc-implementation)
 nmap <Leader>crf <Plug>(coc-references)
+
+"nmap <Leader>crn <Plug>(coc-rename)
 "" jump between errs
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>cgp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>cgn <Plug>(coc-diagnostic-next-error)

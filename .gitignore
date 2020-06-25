@@ -3,6 +3,8 @@ old
 .vim/.netrwhist
 .vim/session
 
+.local/bin/pyflakes
+
 .moc/cache/*
 .moc/equalizer
 .moc/pid

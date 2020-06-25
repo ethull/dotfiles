@@ -8,7 +8,6 @@ if filereadable(expand("~/.vim/config/keybindings.vim"))
   source ~/.vim/config/keybindings.vim
 endif
 
-
 " load all files in dir 
 "for f in split(glob('~/.vim/config/*.vim'), '\n')
 "    exe 'source' f
