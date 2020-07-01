@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/emera/consistent/files/kent/material/term2/problem-solving-with-algorithms-C0383/gc/lab4'
-let g:netrw_dirhist_2='/home/emera/dotfiles/.vim/plugin'
-let g:netrw_dirhist_3='/home/emera/dotfiles/.vim'
-let g:netrw_dirhist_4='/home/emera/consistent/files/txt-files/wiki/guides/unix/shell'
-let g:netrw_dirhist_5='/home/emera/consistent/projects/sharp-utils/sharp-utils/src/features/time'
-let g:netrw_dirhist_6='/home/emera/consistent/projects/sharp-utils/sharp-utils/src/features'
-let g:netrw_dirhist_7='/home/emera/consistent/projects/sharp-utils/sharp-utils/src/features/time'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/emera/consistent/projects/sharp-utils/sharp-utils/src/features'
