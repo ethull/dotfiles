@@ -25,3 +25,7 @@ old
 
 .config/newsboat/cache/*
 .config/newsboat/log/*
+
+.weechat/logs/*
+.weechat/irc.conf
+.weechat/weechat.log
