@@ -14,8 +14,11 @@
         <value type="int" value="19"/>
         <value type="int" value="1"/>
         <value type="int" value="20"/>
-        <value type="int" value="21"/>
+        <value type="int" value="15"/>
         <value type="int" value="22"/>
+        <value type="int" value="9"/>
+        <value type="int" value="16"/>
+        <value type="int" value="21"/>
         <value type="int" value="23"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
@@ -72,6 +75,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="true"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="copyq"/>
         <value type="string" value="task manager"/>
         <value type="string" value="notes"/>
         <value type="string" value="clipman"/>
@@ -88,7 +92,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance11444;rhythmbox"/>
+      <property name="mpris-players" type="string" value="chromium.instance11444;chromium.instance15484;chromium.instance16424;chromium.instance18955;chromium.instance23067;chromium.instance24547;chromium.instance2493;chromium.instance2523;chromium.instance2615;chromium.instance30971;chromium.instance3244;chromium.instance32575;chromium.instance4479;chromium.instance6083;chromium.instance6361;chromium.instance8532;chromium.instance8911;rhythmbox"/>
     </property>
     <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-11" type="string" value="separator">
@@ -121,5 +125,20 @@
       </property>
     </property>
     <property name="plugin-23" type="string" value="separator"/>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15853107521.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15905123191.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15936011151.desktop"/>
+      </property>
+    </property>
   </property>
 </channel>

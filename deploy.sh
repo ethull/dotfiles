@@ -2,6 +2,7 @@ path=$(pwd)
 
 # home
 ln -sf $path/.bashrc $HOME/.bashrc
+ln -sf $path/.bash_aliases $HOME/.bash_aliases
 ln -sf $path/.profile $HOME/.profile
 ln -sf $path/.xresources $HOME/.xresources
 ln -sf $path/.xsession $HOME/.xsession

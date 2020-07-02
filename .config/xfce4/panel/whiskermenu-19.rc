@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xfce-display-settings.desktop,xfce-wm-settings.desktop,org.gnome.Evolution.desktop,xfce-keyboard-settings.desktop,software-properties-gtk.desktop,org.gnome.Software.desktop,xfce-backdrop-settings.desktop,panel-preferences.desktop,xfce4-taskmanager.desktop,ubuntu-amazon-default.desktop
+recent=gparted.desktop,Thunar.desktop,brave-browser.desktop,org.gnome.Evolution.desktop,org.keepassxc.KeePassXC.desktop,xfce-keyboard-settings.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,exo-file-manager.desktop,xfce-wmtweaks-settings.desktop
 button-title=Applications
 button-icon=emblem-debian
 button-single-row=false

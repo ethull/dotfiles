@@ -18,7 +18,7 @@
     sudo chmod a+x php-cs-fixer
     sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
     #==python
-    sudo apt install -y python3 pip3
+    sudo apt install -y python3 python3-pip
     sudo pip3 install pyflakes
     sudo pip3 install black
     #==c

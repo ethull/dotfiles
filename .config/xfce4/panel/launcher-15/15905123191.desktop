@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=XTerm
+Comment=xterm with tmux
+Exec=xterm tmux
+Terminal=false
+Type=Application
+Icon=mini.xterm
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;cmd;
+X-Desktop-File-Install-Version=0.24
+X-XFCE-Source=file:///usr/share/applications/debian-xterm.desktop
+Path=
+StartupNotify=false
