@@ -1,0 +1,36 @@
+2020-06-30 19:59:46	-->	emera (~emera@2a00:23c8:5f0e:5401:40ef:ad0c:b03f:5a6b) has joined #debian
+2020-06-30 19:59:46	--	Topic for #debian is "Current Debian release is buster, 10.4 point release /msg dpkg 10.4; /msg dpkg buster; /msg dpkg stretch->buster; /msg dpkg apt suite changed | Oldstable Stretch: /msg dpkg stretch ; /msg dpkg 9.12 ; 9.12 needs dist-upgrade | NO FLOOD: /msg dpkg paste | offtopic: #debian-offtopic | testing/unstable: #debian-next @ irc.oftc.net | chanlogs: /msg dpkg irclog"
+2020-06-30 19:59:46	--	Topic set by themill (~stuart@unaffiliated/themill) on Sun, 10 May 2020 02:06:26
+2020-06-30 19:59:46	--	Channel #debian: 1180 nicks (2 ops, 0 voices, 1178 normals)
+2020-06-30 19:59:46	--	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2020-06-30 19:59:46	--	URL for #debian: http://www.debian.org
+2020-06-30 19:59:48	--	Channel created on Fri, 09 Feb 2001 23:16:24
+2020-06-30 20:01:05	-->	thoros (~thoros@194-166-46-9.hdsl.highway.telekom.at) has joined #debian
+2020-06-30 20:01:45	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-06-30 20:02:32	--	Topic for #debian is "Current Debian release is buster, 10.4 point release /msg dpkg 10.4; /msg dpkg buster; /msg dpkg stretch->buster; /msg dpkg apt suite changed | Oldstable Stretch: /msg dpkg stretch ; /msg dpkg 9.12 ; 9.12 needs dist-upgrade | NO FLOOD: /msg dpkg paste | offtopic: #debian-offtopic | testing/unstable: #debian-next @ irc.oftc.net | chanlogs: /msg dpkg irclog"
+2020-06-30 20:02:32	--	Topic set by themill (~stuart@unaffiliated/themill) on Sun, 10 May 2020 02:06:26
+2020-06-30 20:03:54	-->	aliasnumber10 (~crix@cpe-76-167-192-248.san.res.rr.com) has joined #debian
+2020-06-30 20:04:29	<--	jess (~jess@bitbot/jess) has quit (Quit: Leaving)
+2020-06-30 20:04:49	<--	timur_davletshin (~timur_dav@unaffiliated/timur-davletshin/x-6536285) has quit (Quit: Leaving)
+2020-06-30 20:05:04	-->	grobi (~rtng@unaffiliated/grobi) has joined #debian
+2020-06-30 20:07:00	nvz	Lady_Aleena: is your concern freeing up disk space?
+2020-06-30 20:07:50	nvz	because ~/.thumbnails and ~/.cache/thumbnails are typically the larger of the dirs for people who use a GUI file manager..
+2020-06-30 20:08:00	Lady_Aleena	nvz, I was working on something else and thought getting the .cache cleared would help. It did not, though it is nice to have the browsers' caches cleared.
+2020-06-30 20:08:34	Lady_Aleena	It appears that the browsers are NOT clearing the caches when they close.
+2020-06-30 20:08:58	-->	roo- (~roo-@66.115.175.48) has joined #debian
+2020-06-30 20:09:02	nvz	Lady_Aleena: you can also do crap like making a dir like "mkdir tmp; HOME=tmp/ mycommand" and run something in a clean home to see how it functions
+2020-06-30 20:09:18	nvz	you'll know then what dirs it creates and how it behaves with no data
+2020-06-30 20:09:23	-->	JohnML (~john1@ip-178-202-6-107.hsi09.unitymediagroup.de) has joined #debian
+2020-06-30 20:09:53	greycat	Not everything will blindly respect the HOME variable, though.
+2020-06-30 20:10:00	nvz	this wont typically effect other things like the env, the dbus/dconf, stuff in /tmp etc..
+2020-06-30 20:10:31	greycat	also, you would want HOME to be an absolute path
+2020-06-30 20:10:35	Lady_Aleena	However, I do want to get $HOME as small as possible when I go to back it up somewhere. I am thinking about taking out my current hard drive soon and doing a fresh install of Buster on a new drive.
+2020-06-30 20:10:54	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-06-30 20:11:09	-->	alexrelis (~Thunderbi@2606:2e00:0:60::23de) has joined #debian
+2020-06-30 20:11:25	-->	grobi (~rtng@unaffiliated/grobi) has joined #debian
+2020-06-30 20:12:29	<--	alexrelis (~Thunderbi@2606:2e00:0:60::23de) has quit (Remote host closed the connection)
+2020-06-30 20:12:36	-->	hyskaru (~hyskaru@unaffiliated/hyskaru) has joined #debian
+2020-06-30 20:12:46	-->	alexrelis (~Thunderbi@2606:2e00:0:60::23de) has joined #debian
+2020-06-30 20:14:22	-->	Night-Shade (~TimF@ip5b401e68.dynamic.kabel-deutschland.de) has joined #debian
+2020-06-30 20:14:42	<--	emera (~emera@2a00:23c8:5f0e:5401:40ef:ad0c:b03f:5a6b) has quit (Quit: WeeChat 2.6)
+2020-06-30 20:14:42	--	irc: disconnected from server

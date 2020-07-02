@@ -1,0 +1,77 @@
+!xrdb ~/.xresources
+
+! xterm
+xterm*locale: true
+xterm*termName: xterm-256color
+xterm*title: xterm-256
+xterm*font: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
+xterm*geometry: +0+0
+
+!xterm*scrollBar: true
+!xterm*rightScrollBar: true
+!xterm*scrollbar.width: 8
+! scrollback
+xterm*savelines: 5000
+
+xterm*foreground: #ffffff
+xterm*background: #3a3a3a
+xterm*cursorColor: #ffffff
+
+xterm*renderFont: true
+xterm*faceName: xft:Mononoki Nerd Font
+!xft:JoyPixels:size=12
+!xft:Monospace:style=Medium:size=12   
+xterm*faceSize: 12
+xterm*utf8: 2
+xterm*selectToClipboard:true
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+xterm.vt100.translations: #override \n\
+    Ctrl <Key> s: smaller-vt-font() \n\
+    Ctrl <Key> S: larger-vt-font() \n\
+    Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\
+    Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\
+    Shift<Btn1Down>: select-start() \n\
+    Shift<Btn1Motion>: select-extend() \n\
+    Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+
+! colors
+!! special
+!*.foreground:   #dde1de
+!*.background:   #4a4a4a
+!*.cursorColor:  #dde1de
+
+!! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+!! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+!! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+!! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+!! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+!! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+!! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+!! white
+*.color7:       #707880
+*.color15:      #c5c8c6

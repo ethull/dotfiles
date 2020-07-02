@@ -1,0 +1,63 @@
+2020-06-29 15:08:53	-->	emera (~emera@2a00:23c8:5f0e:5401:447d:da2f:9346:e0e7) has joined #vim
+2020-06-29 15:08:53	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-06-29 15:08:53	--	Topic set by jamessan on Fri, 13 Dec 2019 03:14:14
+2020-06-29 15:08:54	--	Channel #vim: 1058 nicks (0 ops, 0 voices, 1058 normals)
+2020-06-29 15:08:54	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-06-29 15:08:54	--	URL for #vim: http://vi-improved.org
+2020-06-29 15:08:55	--	Channel created on Sun, 26 Nov 2006 06:42:44
+2020-06-29 15:09:44	-->	cdown_ (~cdown@163.114.131.1) has joined #vim
+2020-06-30 19:35:03	-->	emera (~emera@2a00:23c8:5f0e:5401:40ef:ad0c:b03f:5a6b) has joined #vim
+2020-06-30 19:35:03	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-06-30 19:35:03	--	Topic set by jamessan on Fri, 13 Dec 2019 03:14:14
+2020-06-30 19:35:03	--	Channel #vim: 1089 nicks (0 ops, 0 voices, 1089 normals)
+2020-06-30 19:35:03	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-06-30 19:35:03	--	URL for #vim: http://vi-improved.org
+2020-06-30 19:35:05	--	Channel created on Sun, 26 Nov 2006 06:42:44
+2020-06-30 19:35:15	nedbat	nova: thanks.  also, I may be on the completely wrong path here, but at least I learned something....
+2020-06-30 19:35:51	nova	I think you're on the right path if you at least understand that glob != regex xD. You're on a better path than whoever made that :)
+2020-06-30 19:36:31	nedbat	nova: by wrong path, i mean i think i misdiagnosed the problem!
+2020-06-30 19:37:34	<--	pagios (~pagios@178.135.93.60) has quit (Remote host closed the connection)
+2020-06-30 19:38:13	-->	jstein (~jstein@gentoo/developer/jstein) has joined #vim
+2020-06-30 19:38:14	<--	rmarcand (~rmarcand@64.103.40.20) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-06-30 19:40:04	-->	fishstik (~Brian@146.115.69.158) has joined #vim
+2020-06-30 19:41:18	<--	bloony (~pi@2a02:2121:28b:db52:1c13:86d4:5401:2) has quit (Ping timeout: 260 seconds)
+2020-06-30 19:41:34	<--	sentreen (~sentreen@d51A41A71.access.telenet.be) has quit (Ping timeout: 240 seconds)
+2020-06-30 19:42:38	<--	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has quit (Ping timeout: 246 seconds)
+2020-06-30 19:44:50	<--	mokulus (~mat@176.111.229.124) has quit (Quit: WeeChat 2.3)
+2020-06-30 19:45:07	-->	sentreen (sentreen@gateway/vpn/privateinternetaccess/sentreen) has joined #vim
+2020-06-30 19:45:25	-->	IceLight (WinterStar@gateway/vpn/mullvad/winterstar) has joined #vim
+2020-06-30 19:47:47	<--	fishstik (~Brian@146.115.69.158) has quit (Quit: Leaving.)
+2020-06-30 19:48:50	<--	mbandeir (~quassel@177.126.10.88) has quit (Ping timeout: 264 seconds)
+2020-06-30 19:49:25	<--	n-st (~n-st@unaffiliated/n-st) has quit (Quit: ␄)
+2020-06-30 19:49:38	<--	sentreen (sentreen@gateway/vpn/privateinternetaccess/sentreen) has quit (Ping timeout: 246 seconds)
+2020-06-30 19:49:42	-->	n-st (~n-st@unaffiliated/n-st) has joined #vim
+2020-06-30 19:49:50	<--	n-st (~n-st@unaffiliated/n-st) has quit (Remote host closed the connection)
+2020-06-30 19:50:19	-->	n-st (~n-st@unaffiliated/n-st) has joined #vim
+2020-06-30 19:51:55	-->	fishstik (~Brian@146.115.69.158) has joined #vim
+2020-06-30 19:52:01	-->	sentreen (sentreen@gateway/vpn/privateinternetaccess/sentreen) has joined #vim
+2020-06-30 19:53:23	<--	dawud__ (~dawud@151.red-81-44-201.dynamicip.rima-tde.net) has quit (Ping timeout: 246 seconds)
+2020-06-30 19:54:36	-->	neo4 (~Thunderbi@109-201-135-95.pool.ukrtel.net) has joined #vim
+2020-06-30 19:56:17	<--	neo4 (~Thunderbi@109-201-135-95.pool.ukrtel.net) has quit (Client Quit)
+2020-06-30 19:56:28	<--	shnee (~shnee@184-088-075-102.res.spectrum.com) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-06-30 19:56:38	<--	MmeQuignon (~matthieu@2a01:e0a:1ab:f090:58df:3020:1f6b:1ca5) has quit (Quit: WeeChat 2.8)
+2020-06-30 19:56:50	<--	fishstik (~Brian@146.115.69.158) has quit (Read error: Connection reset by peer)
+2020-06-30 19:57:01	-->	MmeQuignon (~matthieu@2a01:e0a:1ab:f090:58df:3020:1f6b:1ca5) has joined #vim
+2020-06-30 19:58:54	-->	imp (~imp@201.17.77.214) has joined #vim
+2020-06-30 19:59:25	-->	mbandeir (~quassel@177.126.10.88) has joined #vim
+2020-06-30 20:01:15	-->	shnee (~shnee@184-088-075-102.res.spectrum.com) has joined #vim
+2020-06-30 20:01:37	-->	mnrmnaugh (~mnrmnaugh@unaffiliated/mnrmnaugh) has joined #vim
+2020-06-30 20:01:45	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-06-30 20:04:22	<--	imp (~imp@201.17.77.214) has quit (Ping timeout: 260 seconds)
+2020-06-30 20:04:29	<--	jess (~jess@bitbot/jess) has quit (Quit: Leaving)
+2020-06-30 20:05:04	-->	grobi (~rtng@unaffiliated/grobi) has joined #vim
+2020-06-30 20:07:58	<--	mbandeir (~quassel@177.126.10.88) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-06-30 20:08:26	-->	mbandeir (~quassel@177.126.10.88) has joined #vim
+2020-06-30 20:10:54	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-06-30 20:11:25	-->	grobi (~rtng@unaffiliated/grobi) has joined #vim
+2020-06-30 20:13:34	-->	paws_ (uid89121@gateway/web/irccloud.com/x-lracmudmyotizsvg) has joined #vim
+2020-06-30 20:13:42	<--	WaveHusky (~starhowl@p200300dbcf17f100ec93944256f668db.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-06-30 20:13:49	-->	Starhowl (~starhowl@p508d46b0.dip0.t-ipconnect.de) has joined #vim
+2020-06-30 20:14:17	-->	glik22 (~glik22@2601:647:4800:592::158) has joined #vim
+2020-06-30 20:14:20	-->	Night-Shade (~TimF@ip5b401e68.dynamic.kabel-deutschland.de) has joined #vim
+2020-06-30 20:14:42	<--	emera (~emera@2a00:23c8:5f0e:5401:40ef:ad0c:b03f:5a6b) has quit (Quit: WeeChat 2.6)
+2020-06-30 20:14:42	--	irc: disconnected from server

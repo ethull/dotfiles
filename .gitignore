@@ -21,6 +21,7 @@ old
 
 .config/xfce4/xfce4-screenshooter
 .config/xfce4/desktop/*
-.config/vifm/vifm*
+.config/vifm/vifminfo*
+
 .config/newsboat/cache/*
 .config/newsboat/log/*

@@ -1,0 +1,77 @@
+2020-06-30 13:12:38	--	irc: connecting to server irc.debian.org/6667...
+2020-06-30 13:12:38	--	irc: connected to irc.debian.org/6667 (2a00:1a28:1100:12::50)
+2020-06-30 13:12:38	--	liquid.oftc.net: *** Looking up your hostname...
+2020-06-30 13:12:38	--	liquid.oftc.net: *** Checking Ident
+2020-06-30 13:12:42	--	liquid.oftc.net: *** Couldn't look up your hostname
+2020-06-30 13:12:49	--	liquid.oftc.net: *** No Ident response
+2020-06-30 13:12:49	--	Welcome to the OFTC Internet Relay Chat Network emera
+2020-06-30 13:12:49	--	Your host is liquid.oftc.net[2a00:1a28:1100:12::50/6667], running version hybrid-7.2.2+oftc1.7.3
+2020-06-30 13:12:49	--	This server was created Sep 22 2018 at 19:19:32
+2020-06-30 13:12:49	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2020-06-30 13:12:49	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2020-06-30 13:12:49	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2020-06-30 13:12:49	--	7YZAAAXTI :your unique ID
+2020-06-30 13:12:49	--	There are 26 users and 12341 invisible on 19 servers
+2020-06-30 13:12:49	--	21 :IRC Operators online
+2020-06-30 13:12:49	--	1 :unknown connection(s)
+2020-06-30 13:12:49	--	2662 :channels formed
+2020-06-30 13:12:49	--	I have 1354 clients and 1 servers
+2020-06-30 13:12:49	--	Current local users: 1354  Max: 3158
+2020-06-30 13:12:49	--	Current global users: 12367  Max: 15138
+2020-06-30 13:12:49	--	Highest connection count: 3159 (3158 clients) (30501 connections received)
+2020-06-30 13:12:49	--	- liquid.oftc.net Message of the Day - 
+2020-06-30 13:12:49	--	-   O
+2020-06-30 13:12:49	--	-    \   The Open and Free
+2020-06-30 13:12:49	--	-     O
+2020-06-30 13:12:49	--	-    /|  Technology Community
+2020-06-30 13:12:49	--	- O-O O
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- Welcome to OFTC's IRC network.
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- The Open and Free Technology Community was founded at the
+2020-06-30 13:12:49	--	- end of 2001 by a group of experienced members of the Open
+2020-06-30 13:12:49	--	- Source and Free Software communities; it is aimed at
+2020-06-30 13:12:49	--	- providing these communities with better communication,
+2020-06-30 13:12:49	--	- development, and support infrastructure. Our goal is to
+2020-06-30 13:12:49	--	- provide stable services to members of the community in any
+2020-06-30 13:12:49	--	- part of the world, while listening closely to their needs
+2020-06-30 13:12:49	--	- and desires.
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- We are not a general purpose chat platform, but a topical
+2020-06-30 13:12:49	--	- network intent on providing the open source and free
+2020-06-30 13:12:49	--	- software communities a means to cooperate and communicate.
+2020-06-30 13:12:49	--	- As such, illegal and off-topic activity, such as warez
+2020-06-30 13:12:49	--	- trading, may result in being barred from access.
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- OFTC honors your privacy. To operate the network, we store
+2020-06-30 13:12:49	--	- and process information about IRC connections, nicknames,
+2020-06-30 13:12:49	--	- and channels. Our Privacy Policy explains what we do with
+2020-06-30 13:12:49	--	- that data, and what your rights are. By connecting, you
+2020-06-30 13:12:49	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- For more information on OFTC, please visit https://www.oftc.net/.
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- If you require assistance, stop by in channel #oftc, or email
+2020-06-30 13:12:49	--	- support@oftc.net with details.
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	- Thanks and enjoy your stay,
+2020-06-30 13:12:49	--	- 
+2020-06-30 13:12:49	--	-         The OFTC team
+2020-06-30 13:12:49	--	End of /MOTD command.
+2020-06-30 13:12:49	--	User mode [+i] by emera
+2020-06-30 13:24:58	--	MSG(NickServ): REGISTER *************************************
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): Nickname emera has been registered successfully and is now yours to use.
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): See HELP SET for information on settings that you can set on your new
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): nickname.  If you change nickname or reconnect to the IRC network you will be
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): required to identify using the password you chose when you registered.  See
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): HELP IDENTIFY for more information on identifying your nickname.
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): 
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): To complete the registration, the nickname must be VERIFIED.  To verify
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): your nick, go to https://services.oftc.net/, log in with your NickServ
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): password, and follow the instructions there.  Note that we do not validate
+2020-06-30 13:24:59	--	NickServ (services@services.oftc.net): the e-mail address.
+2020-06-30 13:29:26	--	MSG(NickServ): checkverify
+2020-06-30 13:29:26	--	User mode [+R] by emera
+2020-06-30 13:29:26	--	NickServ (services@services.oftc.net): Successfully set +R on your nick.
+2020-06-30 13:37:16	--	debian :Illegal channel name
+2020-06-30 13:45:36	--	irc: disconnected from server
