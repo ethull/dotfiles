@@ -51,9 +51,10 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <silent> <leader>b :Buffers<CR>
-
+nnoremap <leader>e. :put=expand('%:p')<CR>
 
 "" clipboard setup
+noremap Y y$
 " + = selection clipboard (global), * = unamed clipboard 
 " uncomment below to join selection and unamed clipboards
 "if has('unnamedplus')
@@ -71,8 +72,8 @@ noremap <C-v> "+P
 
 noremap <Leader>x "+x<CR>
 noremap <Leader>y "+y<CR>
-noremap <Leader>p "+P<CR>
-
+noremap <Leader>p "+p<CR>
+noremap <Leader>P "+P<CR>
 " in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
 inoremap <C-c> <NOP>
 inoremap <C-v> <C-r>"

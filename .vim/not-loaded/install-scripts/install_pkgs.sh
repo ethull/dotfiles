@@ -29,8 +29,7 @@
     sudo apt install -y openjdk-11-jdk checkstyle maven
     mkdir ~/.vim/manual-setup
     mkdir ~/.vim/manual-setup/linters
-    #checkstyle (java linter) is not in archs repos, download jar file and put in a launcher script for ale to find
-    cd ~/.vim/manual-setup/linters
+    sudo apt install checkstyle
     #sudo apt install checkstyle 
     # latex
     sudo apt install texlive-latex-extra
@@ -43,6 +42,12 @@
     //linter
     sudo apt install chktex
     sudo apt install lacheck
+    #==go
+    wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+    sudo ln -s /usr/local/go/bin/go /usr/local/bin/go
+    sudo ln -s /usr/local/go/bin/gofmt /usr/local/bin/gofmt
+    #==vimscript
+    pip3 install vim-vint
 
 # arch
     sudo pacman -S gvim lua
@@ -55,16 +60,20 @@
     sudo npm i typescript -g
     sudo npm i eslint --save-dev -g
     sudo npm i standard --save-dev -g
+
     #==html, css
     sudo npm i htmlhint --save-dev -g
     sudo npm i prettier --save-dev -g
+
     #==python
     sudo pip3 install pyflakes
     sudo pip3 install black
+
     #==c
     sudo pacman -S gcc
     sudo pacman -S clangd-9
     sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-9 100
+
     #==java
     mkdir ~/.vim/manual-setup
     mkdir ~/.vim/manual-setup/linters
@@ -75,3 +84,6 @@
     chmod u+x checkstyle
     #add to path for language server client 
     cp ./checkstyle /usr/bin
+
+    #==vimscript
+    pip3 install vim-vint

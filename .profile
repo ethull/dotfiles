@@ -26,6 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# private env vars, not uploaded to dotfiles
+if [ -f "$HOME/.profile_private" ] ; then
+    . ~/.profile_private
+fi
 
 export EDITOR="vim"
 export VISUAL="vim"
@@ -33,10 +37,7 @@ export TERMINAL="xfce4-terminal"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="vifm"
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
-export PATH=$PATH:~/programs/flutter/bin
 export XDG_CONFIG_HOME="$HOME/.config"
-export WIKI_PATH="$HOME/consistent/files/txt-files/wiki"
 
 # setup xterm
 xrdb ~/.xresources
@@ -44,7 +45,10 @@ xrdb ~/.xresources
 #source $HOME/.fzf/shell/completion.bash
 #source $HOME/.fzf/shell/key-bindings.bash
 
-#rbenv vars
+#java vars
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
+
+#ruby rbenv vars
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 #export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"

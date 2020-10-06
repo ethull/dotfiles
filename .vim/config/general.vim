@@ -1,4 +1,7 @@
 set nocompatible
+" swap files
+"set directory=/tmp
+
 " lookup 
 set autoread
 

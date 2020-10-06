@@ -33,19 +33,20 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-tsserver',
   \ 'coc-phpls',
-  \ 'coc-sh', 
-  \ 'coc-python', 
+  \ 'coc-sh',
+  \ 'coc-python',
   \ 'coc-java',
   \ 'coc-clangd',
-  \ 'coc-pairs',
-  \ 'coc-json', 
-  \ 'coc-marketplace', 
+  \ 'coc-json',
+  \ 'coc-vimtex',
+  \ 'coc-marketplace',
   \ ]
 "currently broken
-"\ 'coc-eslint', 
-"\ 'coc-prettier', 
- 
-"coc.nvim 
+"\ 'coc-pairs',
+"\ 'coc-eslint',
+"\ 'coc-prettier',
+
+"coc.nvim
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort

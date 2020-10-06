@@ -1,9 +1,12 @@
 old
 .vim/plugged
 .vim/.netrwhist
-.vim/session
+.vim/session/*
+.vim/sessions/*
 
 .local/bin/pyflakes
+
+.test-vim/*
 
 .moc/cache/*
 .moc/equalizer
@@ -12,16 +15,19 @@ old
 .moc/socket2
 .moc/last_directory
 
-.config/vifm/vifminfo
 *.swp
 .config/newsboat/cache/*
 
 .ssh/cache/*
 .ssh/keys/*
+#.ssh/config
 
 .config/xfce4/xfce4-screenshooter
 .config/xfce4/desktop/*
+
 .config/vifm/vifminfo*
+.config/vifm/vifmimgpdffile
+.config/vifm/vifmimgpdfpage
 
 .config/newsboat/cache/*
 .config/newsboat/log/*

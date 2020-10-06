@@ -6,7 +6,6 @@ alias sai="sudo apt install"
 
 #alias myip="curl --silent https://ipecho.net/plain; echo"
 #alias ss="ss -ntlp"
-alias ytdl='youtube-dl'
 alias ps="ps auxf" # # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias pse="\ps -e --forest" # list processes as a tree
 alias psg="\ps aux | grep -v grep | grep -i -e VSZ -e" # search for a running process. example: psg firefox
@@ -26,11 +25,24 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# find
+alias fd="find -name"
+
+
+# fzf wrappers
+alias fzfcd='fzfcd() { cd "$(find -type d 2>/dev/null | fzf)" ;}; fzfcd'
+alias fzfed='fzfed() { $EDITOR "$(find -type f 2>/dev/null | fzf)" ;}; fzfed'
+
+#eslint global config
+alias eslint="eslint --resolve-plugins-relative-to /usr/local/lib/node_modules"
+
+alias ytdl='youtube-dl'
+
 # libre office convert docx and pptx to pdf
 alias lowpdf="lowriter --convert-to pdf"
 
 alias brave="brave-browser"
 
-# fzf wrappers
-alias fzfcd='fzfcd() { cd "$(find -type d 2>/dev/null | fzf)" ;}; fzfcd'
-alias fzfed='fzfed() { $EDITOR "$(find -type f 2>/dev/null | fzf)" ;}; fzfed'
+alias safe_zathura="firejail --disable-mnt zathura"
+alias safe_pdf2ps="firejail --disable-mnt --private-dev --net=none pdf2ps"
+alias safe_ps2pdf="firejail --disable-mnt --private-dev --net=none ps2pdf"

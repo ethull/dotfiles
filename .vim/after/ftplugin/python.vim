@@ -1,7 +1,7 @@
-if exists("b:did_ftplugin")
+if exists("b:did_ftplugin_after")
   finish
 endif
-let b:did_ftplugin = 1
+let b:did_ftplugin_after = 1
 
 setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=79
       \ formatoptions+=croq softtabstop=4
