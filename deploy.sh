@@ -1,13 +1,12 @@
 path=$(pwd)
 
 # home
-ln -sf $path/.bashrc $HOME/.bashrc
+#ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.bash_aliases $HOME/.bash_aliases
 ln -sf $path/.profile $HOME/.profile
 ln -sf $path/.xresources $HOME/.xresources
 ln -sf $path/.xsession $HOME/.xsession
 ln -sf $path/.xinitrc $HOME/.xinitrc
-ln -sf $path/.xprofile $HOME/.xprofile
 
 
 # xdg config
