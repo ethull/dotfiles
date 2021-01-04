@@ -21,9 +21,10 @@ alias tarx="tar -xf"
 alias off="shutdown -h now"
 
 # ubuntu ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+alias lt="ls -h -s -1 -S"
 
 # find
 alias fd="find -name"
@@ -43,6 +44,12 @@ alias lowpdf="lowriter --convert-to pdf"
 
 alias brave="brave-browser"
 
+# if not by default
+alias vi="vim"
+
 alias safe_zathura="firejail --disable-mnt zathura"
 alias safe_pdf2ps="firejail --disable-mnt --private-dev --net=none pdf2ps"
 alias safe_ps2pdf="firejail --disable-mnt --private-dev --net=none ps2pdf"
+
+# get public facing internet info
+alias public_internet="curl ipinfo.io"
