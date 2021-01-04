@@ -52,3 +52,6 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 #export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+#if using gem --user-install with no rbenv
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
