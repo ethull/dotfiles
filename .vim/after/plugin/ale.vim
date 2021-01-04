@@ -16,7 +16,7 @@ let g:ale_javascript_eslint_options = '--resolve-plugins-relative-to /usr/local/
     \'python': ['pyflakes'],
     \'javascript': ['eslint'],
     \'jsx': ['eslint'],
-    \'java': ['checkstyle'],
+    \'java': ['javac','checkstyle'],
     \'c': ['clang','gcc'],
     \'vimwiki': ['markdownlint'],
     \'html': ['htmlhint'],
