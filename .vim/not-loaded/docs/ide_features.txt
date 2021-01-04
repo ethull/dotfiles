@@ -1,4 +1,18 @@
-find references/symbols
-jump to definition
+nav
+    find references/symbols
+        ctags
+            universal ctags
+    jump to definition
 lint/fixers
-autocompletion
+    linters.txt
+autocompletion / intellisense / omnicompletion
+    deoplete
+        https://github.com/Shougo/deoplete.nvim#configuration
+        https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
+    lsp
+        coc.nvim
+visual info
+    code lenses -> markers for parent properties, mtds implementing EG
+    tooltip
+refactoring
+auto import

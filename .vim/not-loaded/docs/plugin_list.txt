@@ -22,7 +22,7 @@ Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 " linter manager ----
 Plug 'w0rp/ale'
 
-" autcomplete ----
+" autocomplete ----
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
 
 " language packs ----

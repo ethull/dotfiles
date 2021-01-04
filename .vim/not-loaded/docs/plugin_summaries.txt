@@ -9,6 +9,7 @@ recomended setup
         git: fugitive
         statusline: airline airline-themes 
         linter: ale, syntastic, some lsps
+		fixer/autoformater: ale, vim-codefmt, vim-autoformat, neoformat 
         automcomplete: ycm, deoplete, lsp
     langserver (lsp) clients
         //lsp provides autocomplete and other IDE features

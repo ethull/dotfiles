@@ -52,3 +52,22 @@ c
             https://clang.llvm.org/docs/JSONCompilationDatabase.html
         integration    
             coc-settings.json as provided lsp
+php
+    phpls
+        https://github.com/bmewburn/intelephense-docs
+        https://github.com/marlonfan/coc-phpls
+        https://intelephense.com/
+    phpactor
+        https://github.com/phpactor/phpactor
+    php-language-server
+        https://github.com/felixfbecker/php-language-server
+    serenata
+        https://gitlab.com/Serenata/Serenata
+        https://gitlab.com/Serenata/visual-studio-code-client
+        https://gitlab.com/Serenata/Serenata/-/wikis/home
+        https://github.com/ycm-core/lsp-examples/blob/master/php/snippet.vim
+    phan
+        https://github.com/phan/phan
+    psalm
+        https://github.com/vimeo/psalm
+
