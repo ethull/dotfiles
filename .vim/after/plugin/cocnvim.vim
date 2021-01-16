@@ -40,6 +40,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-vimtex',
   \ 'coc-marketplace',
+  \ 'coc-snippets',
   \ ]
 "currently broken
 "\ 'coc-pairs',
