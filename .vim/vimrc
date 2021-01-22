@@ -1,9 +1,20 @@
-if filereadable(expand("~/.vim/config/plug.vim"))
-  source ~/.vim/config/plug.vim
+"load users config options
+if filereadable(expand("~/.vim/config/config_manual.vim"))
+  source ~/.vim/config/config_manual.vim
+  "if user choose to load plugins load them
+  if (g:load_plugins)
+    if filereadable(expand("~/.vim/config/plug.vim"))
+      source ~/.vim/config/plug.vim
+    else
+      filetype plugin indent on
+    endif
+  endif
 endif
+"load general vim settings
 if filereadable(expand("~/.vim/config/general.vim"))
   source ~/.vim/config/general.vim
 endif
+"load general keybindings (does not include plugin keybindings)
 if filereadable(expand("~/.vim/config/keybindings.vim"))
   source ~/.vim/config/keybindings.vim
 endif

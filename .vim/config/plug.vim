@@ -31,8 +31,8 @@ endif
 "sidebar that displays ctags-generated tags of the current file, ordered by their scope
 "Plug 'majutsushi/tagbar'
 "Plug 'vim-scripts/grep.vim'
-"streamless vim-tmux split navigation
-Plug 'christoomey/vim-tmux-navigator'
+"streamless vim-tmux split navigation, (doesnt work)
+"Plug 'christoomey/vim-tmux-navigator'
 "" appearance
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -41,7 +41,7 @@ Plug 'vim-scripts/CSApprox'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 "color
-Plug 'tomasr/molokai'
+"Plug 'tomasr/molokai'
 "" git
 Plug 'tpope/vim-fugitive'
 "required by fugitive to :Gbrowse
@@ -61,7 +61,9 @@ Plug 'dense-analysis/ale'
 "python autocomplete, coc-python dependancy
 "Plug 'davidhalter/jedi-vim'
 "versatile lsp client
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if (g:load_lsp)
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
 "multi language autocomplete
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' }
 """ snippets

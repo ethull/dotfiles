@@ -72,6 +72,7 @@ noremap <C-v> "+P
 
 noremap <Leader>x "+x<CR>
 noremap <Leader>y "+y<CR>
+noremap <Leader>Y "+y$
 noremap <Leader>p "+p<CR>
 noremap <Leader>P "+P<CR>
 " in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
