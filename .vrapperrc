@@ -1,0 +1,92 @@
+" :set filetype=vim
+"" settings
+" Tabs. May be overridden by autocmd rules
+set tabstop=4
+" change max amount of BS that can be inserted, set to -1 tp cp shiftwidth
+set softtabstop=4
+set shiftwidth=4
+"for java we want tabs and not spaces
+set noexpandtab
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" auto indent
+set nosmartindent
+set autoindent
+
+" line numbers
+set number
+
+" auto change cwd to the currently edited files parent
+"set autochdir
+
+" set value of <Leader> to be used in mappings
+"let mapleader=','
+
+
+"" keybindings
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" undo stuff
+nnoremap U <C-r>
+
+""" Abbreviations
+"shortcuts/autocorrect
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
+
+
+"" win resizing, todo
+" recomend remaping window operations resize splits to avoid ctrl + w + shift 
+" popular nnoremap +-<> <C-w>+-<>  
+" can use HJKL as this works nice in tmux as prefix-HJKL
+"nnoremap K <C-w>+
+"nnoremap J  <C-w>-
+"nnoremap H  <C-w>< 
+"nnoremap L <C-w>> 
+
+""  Set working directory, todo
+"nnoremap <leader>. :lcd %:p:h<CR>
+" Opens an edit command with the path of the currently edited file filled in
+"noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" Opens a tab edit command with the path of the currently edited file filled
+"noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+"cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+"nnoremap <silent> <leader>b :Buffers<CR>
+"nnoremap <leader>e. :put=expand('%:p')<CR>
+
+"" clipboard setup
+noremap Y y$
+"noremap <C-x> "+x
+"noremap <C-c> "+y
+"noremap <C-v> "+P
+"noremap <space>v <C-v>
+" map global register to single key
+noremap ; "+
+" in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
+"inoremap <C-c> <NOP>
+"inoremap <C-v> <C-r>"
+
+"" visual mode
+" Vmap for maintain Visual Mode after shifting > and <
+vmap < <gv
+vmap > >gv
+" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
