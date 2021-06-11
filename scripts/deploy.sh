@@ -1,3 +1,4 @@
+cd ..
 path=$(pwd)
 
 # home
