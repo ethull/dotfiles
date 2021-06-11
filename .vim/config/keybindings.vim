@@ -69,18 +69,20 @@ noremap Y y$
 noremap <C-x> "+x
 noremap <C-c> "+y
 noremap <C-v> "+P
-
-noremap <Leader>x "+x<CR>
-noremap <Leader>y "+y<CR>
-noremap <Leader>Y "+y$
-noremap <Leader>p "+p<CR>
-noremap <Leader>P "+P<CR>
-" in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
-inoremap <C-c> <NOP>
-inoremap <C-v> <C-r>"
-
 " remap visual block mode
 noremap <space>v <C-v>
+
+"noremap <Leader>x "+x<CR>
+"noremap <Leader>y "+y<CR>
+"noremap <Leader>Y "+y$
+"noremap <Leader>p "+p<CR>
+"noremap <Leader>P "+P<CR>
+" rather than individual bindings, just map global register
+noremap ; "+
+
+" in insert mode ctrl-c is disabled, ctrl-v copies from the unamed register
+"inoremap <C-c> <NOP>
+"inoremap <C-v> <C-r>"
 
 "if has('macunix')
 "  " pbcopy for OSX copy/paste
