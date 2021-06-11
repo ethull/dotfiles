@@ -42,6 +42,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # setup xterm
 xrdb ~/.xresources
 
+#set screensaver timeout
+xset s 6000 6000
+
 #source $HOME/.fzf/shell/completion.bash
 #source $HOME/.fzf/shell/key-bindings.bash
 
@@ -55,3 +58,4 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 
 #if using gem --user-install with no rbenv
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+export PATH="$HOME/.ghcup/bin:$PATH"
