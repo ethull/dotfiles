@@ -110,6 +110,9 @@ endif
 "exe external cmds asyncronously
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
+"" extend native interface to unicode
+Plug 'chrisbra/unicode.vim'
+
 """ notetaking
 " Plug 'vimwiki/vimwiki'
 
