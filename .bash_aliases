@@ -53,3 +53,5 @@ alias safe_ps2pdf="firejail --disable-mnt --private-dev --net=none ps2pdf"
 
 # get public facing internet info
 alias public_internet="curl ipinfo.io"
+
+alias mpvg="mpv --player-operation-mode=pseudo-gui"
