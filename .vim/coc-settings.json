@@ -19,6 +19,10 @@
         "args": ["--lsp"],
         "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
         "filetypes": ["haskell", "lhaskell"]
+      },
+      "erlang": {
+        "command": "/home/emera/files/programs/erlang/erlang_ls-0.10.0/_build/default/bin/erlang_ls",
+        "filetypes": ["erlang"]
       }
     }
 }

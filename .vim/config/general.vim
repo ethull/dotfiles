@@ -112,7 +112,8 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 "" Commands
 " remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
-
+" save file as root
+command! -nargs=0 Sw w !sudo tee % > /dev/null
 
 "" Functions
 if !exists('*s:setupWrapping')
@@ -153,6 +154,24 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
+" disable settings for faster loading of large files
+augroup LargeFile 
+  au!
+  autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:largeFileSize || f == -2 | call LargeFile() | endif
+augroup END
+
+function! LargeFile()
+  " no syntax highlighting etc
+  "set eventignore+=FileType
+  " save memory when other file is viewed
+  setlocal bufhidden=unload
+  " is read-only (write with :w new_filename)
+  setlocal buftype=nowrite
+  " no undo possible
+  setlocal undolevels=-1
+  " display message
+  autocmd VimEnter *  echo "The file is larger than " . (g:largeFileSize / 1024 / 1024) . " MB, so some options are changed (see .vimrc for details)."
+endfunction
 
 "setup lesspipe"
 if exists('g:did_load_filetypes')
