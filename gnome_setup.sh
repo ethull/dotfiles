@@ -21,6 +21,9 @@ git clone https://github.com/vinceliuice/grub2-themes
 )
 rm -r grub2-themes
 
+# if using gnome evolution
+gsettings set org.gnome.evolution.plugin.mail-notification notify-sound-enabled "false"
+gsettings set org.gnome.evolution.plugin.mail-notification notify-sound-use-theme "false"
 
 # graphics
 sudo dpkg --add-architecture i386 
