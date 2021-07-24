@@ -54,6 +54,8 @@ bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xsel -i --clipboar
 ## plguins keys 
 set -g @jump-key 'g'
 set -g @urlview-key 'b'
+#jump-key unmaps s regardless, remap it back to default
+bind-key s choose-tree -Zs
 # tmux-fzf: F
 
 # Use vi keybindings for tmux commandline input.
