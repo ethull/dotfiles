@@ -36,3 +36,5 @@ old
 .weechat/logs/*
 .weechat/irc.conf
 .weechat/weechat.log
+
+.config/tmux/plugins
