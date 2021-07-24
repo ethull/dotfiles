@@ -52,6 +52,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
+"https://github.com/airblade/vim-rooter
+"https://github.com/amiorin/vim-project
 "lines show indentation, alternative to following for spaces :set list lcs=tab:\|\
 Plug 'Yggdroot/indentLine'
 "contains language packs, 
@@ -110,7 +112,7 @@ endif
 "exe external cmds asyncronously
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
-"" extend native interface to unicode
+""" extend native interface to unicode
 Plug 'chrisbra/unicode.vim'
 
 """ notetaking
@@ -119,6 +121,10 @@ Plug 'chrisbra/unicode.vim'
 """ vim-session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
+
+""" leader key prompt/guide
+Plug 'liuchengxu/vim-which-key'
+"Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 """ removed
 " update stuff installed by vim-bootstrap
