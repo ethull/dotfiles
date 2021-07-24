@@ -37,6 +37,7 @@ let g:ale_javascript_eslint_options = '--resolve-plugins-relative-to /usr/local/
     \'css': ['prettier'],      
     \'scss': ['prettier'], 
     \'html': ['prettier'],
+    \'markdown': ['prettier'],
     \'php': ['php_cs_fixer']
     \})
 let g:ale_fix_on_save = 0

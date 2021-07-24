@@ -1,4 +1,6 @@
 old
+*.old
+
 .vim/plugged
 .vim/.netrwhist
 .vim/session/*
