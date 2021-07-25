@@ -16,6 +16,9 @@ ln -sf $Path/.xinitrc $HOME/.xinitrc
 [ -d $HOME/.vim ] && rm -r $HOME/.vim
 ln -sf $Path/.vim $HOME/.vim
 
+[ -d $HOME/.config/nvim ] && rm -r $HOME/.config/nvim
+ln -sf $Path/.config/nvim $HOME/.config/nvim
+
 [ -d $HOME/.moc ] && rm -r $HOME/.moc
 ln -sf $Path/.moc $HOME/.moc
 
