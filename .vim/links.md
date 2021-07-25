@@ -2,8 +2,6 @@
     https://github.com/junegunn/vim-plug
     https://github.com/neoclide/coc.nvim/wiki/Using-workspaceFolders#resolve-workspace-folder
 # todo links
-macos config
-    https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 try plugin
     https://github.com/andymass/vim-matchup
 fzf searches from project route
