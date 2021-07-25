@@ -59,3 +59,6 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 #if using gem --user-install with no rbenv
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
+
+#echo 'eval "$(/home/emera/.linuxbrew/bin/brew shellenv)"' >> /home/emera/.profile
+export PATH="$HOME/.linuxbrew/bin:$PATH"
