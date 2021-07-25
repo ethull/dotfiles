@@ -1,6 +1,6 @@
 https://github.com/neoclide/coc.nvim/wiki/Language-servers#register-custom-language-servers
 
-java
+# java
     eclipse java lsp
         :CocInstall java
     georgewfraser/java-language-server    
@@ -11,14 +11,14 @@ java
             scripts/link_linux.sh 
         integration
             coc-settings.json as custom lsp
-python 
+# python 
     palantir/python-language-server
         :CocInstall python
         system setup
             pip3 install python-language-server
         integration
             coc-settings.json as provided lsp
-js
+# js, ts
     tsserver
         :CocInstall coc-tsserver
     javascript-typescript-langserver    
@@ -32,14 +32,14 @@ js
         integration
             coc-settings.json as provided lsp
     
-bash
+# bash
     bash-language-server
         :CocInstall coc-sh 
         system setup
             npm i -g javascript-typescript-langserver
         integration
             coc-settings.json as provided lsp
-c
+# c
     ccls
         system setup
             TODO get setup    
@@ -52,7 +52,8 @@ c
             https://clang.llvm.org/docs/JSONCompilationDatabase.html
         integration    
             coc-settings.json as provided lsp
-php
+
+# php
     phpls
         https://github.com/bmewburn/intelephense-docs
         https://github.com/marlonfan/coc-phpls
@@ -70,4 +71,3 @@ php
         https://github.com/phan/phan
     psalm
         https://github.com/vimeo/psalm
-

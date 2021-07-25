@@ -3,7 +3,11 @@ nav
         ctags
             universal ctags
     jump to definition
-lint/fixers
+info
+    hover
+    code lenses -> markers for parent properties, mtds implementing EG
+    tooltip
+formatters: lint/fixers
     linters.txt
 autocompletion / intellisense / omnicompletion
     deoplete
@@ -11,8 +15,7 @@ autocompletion / intellisense / omnicompletion
         https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
     lsp
         coc.nvim
-visual info
-    code lenses -> markers for parent properties, mtds implementing EG
-    tooltip
-refactoring
-auto import
+rename symbol
+refactor
+code actions
+    auto import

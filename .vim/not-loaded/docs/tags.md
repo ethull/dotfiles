@@ -22,4 +22,3 @@
     allows quick lookup
     auto tag file generator
         update tags file in background
-

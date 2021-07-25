@@ -1,5 +1,6 @@
 # sources
     https://github.com/collections/clean-code-linters
+
 # intro
     linter: look for errors in code, can be syntax/logic or style
     fixer/autoformatter: automatically fix errors, normally style
@@ -7,6 +8,7 @@
     lint errs //lint for errs
     lint errs/style //lint for errs and style
     lint errs/style+ //lint for errs and style but focus on style
+
 # list
 c, c#, c++
     clang, clangd: lint errs
