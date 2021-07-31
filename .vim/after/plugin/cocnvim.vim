@@ -25,7 +25,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-phpls',
   \ 'coc-sh',
-  \ 'coc-python',
+  \ 'coc-pyright',
   \ 'coc-java',
   \ 'coc-clangd',
   \ 'coc-json',
