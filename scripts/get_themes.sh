@@ -8,6 +8,6 @@ git clone https://github.com/vinceliuice/grub2-themes
 (
     cd grub2-themes
     chmod +x ./install.sh
-    sudo ./install.sh --slaze
+    sudo ./install.sh -b -t slaze
 )
 rm -r grub2-themes
