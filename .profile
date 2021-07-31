@@ -62,3 +62,7 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 
 #echo 'eval "$(/home/emera/.linuxbrew/bin/brew shellenv)"' >> /home/emera/.profile
 export PATH="$HOME/.linuxbrew/bin:$PATH"
+
+#export N_PREFIX="$HOME/.local"
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
