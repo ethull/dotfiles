@@ -72,7 +72,7 @@ Plug 'gorodinskiy/vim-coloresque'
 """" lang specific
 """"" markdown
 "Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': 'md'}
+Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'md']}
 "Plug 'gabrielelana/vim-markdown'
 Plug 'vim-pandoc/vim-pandoc-syntax', {'for': 'md'}
 """"" latex
