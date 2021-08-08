@@ -46,10 +46,12 @@ unbind [ # todo neccessary?
 bind Escape copy-mode
 unbind p
 bind p paste-buffer
-bind-key -Tcopy-mode-vi 'v' send -X begin-selection
-bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "~/.copy"
+# bind-key -Tcopy-mode-vi 'v' send -X begin-selection
+# bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "~/.copy"
 # global cp
+bind -T copy-mode-vi 'y' send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
 bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
+#bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
 
 ## plguins keys 
 set -g @jump-key 'g'
