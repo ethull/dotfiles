@@ -46,14 +46,15 @@ unbind [ # todo neccessary?
 bind Escape copy-mode
 unbind p
 bind p paste-buffer
-# bind-key -Tcopy-mode-vi 'v' send -X begin-selection
+bind-key -Tcopy-mode-vi 'v' send -X begin-selection
 # bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "~/.copy"
 # global cp
 bind -T copy-mode-vi 'y' send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
 bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
 #bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
 
-## plguins keys 
+## plugins keys 
 set -g @jump-key 'g'
 set -g @urlview-key 'b'
 #jump-key unmaps s regardless, remap it back to default
