@@ -74,7 +74,7 @@ Plug 'gorodinskiy/vim-coloresque'
 "Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'md']}
 "Plug 'gabrielelana/vim-markdown'
-Plug 'vim-pandoc/vim-pandoc-syntax', {'for': 'md'}
+Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'md']}
 """"" latex
 Plug 'lervag/vimtex', {'for': ['tex', 'latex']}
 """ vim-session
