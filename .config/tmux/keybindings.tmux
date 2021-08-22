@@ -60,6 +60,9 @@ set -g @urlview-key 'b'
 #jump-key unmaps s regardless, remap it back to default
 bind-key s choose-tree -Zs
 # tmux-fzf: F
+set -g @resurrect-save 'S'
+set -g @resurrect-restore 'R'
+
 
 # Use vi keybindings for tmux commandline input.
 # Note that to get command mode you need to hit ESC twice...

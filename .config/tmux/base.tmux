@@ -21,13 +21,17 @@ set -g @tpm_plugins '            \
     sainnhe/tmux-fzf             \
     tmux-plugins/tmux-cpu        \
     tmux-plugins/tmux-urlview    \
+    tmux-plugins/tmux-resurrect  \
     schasse/tmux-jump            \
 '
-
 # tmux-plugins/tmux-sensible   \
 # tmux-plugins/tmux-yank       \
 # jimeh/tmux-themepack         \
 # wfxr/tmux-fzf-url            \
+
+set -g @resurrect-processes 'mocp ssh psql mysql sqlite3'
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
 
 # initialize tmux plugin manager
 run -b '~/.config/tmux/plugins/tpm/tpm'
