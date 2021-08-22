@@ -1,2 +1,3 @@
 # run by startx
-xfce4-session
+[ -f ~/.xprofile ] && . ~/.xprofile &
+exec xfce4-session

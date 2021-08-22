@@ -1,2 +1,0 @@
-# run by dm
-. ~/.xinitrc

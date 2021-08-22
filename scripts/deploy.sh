@@ -7,7 +7,7 @@ ln -sf $Path/.bash_aliases $HOME/.bash_aliases
 [ -f $HOME/.profile ] && rm -r $HOME/.profile
 ln -sf $Path/.profile $HOME/.profile
 ln -sf $Path/.xresources $HOME/.xresources
-ln -sf $Path/.xsession $HOME/.xsession
+ln -sf $Path/.xprofile $HOME/.xprofile
 ln -sf $Path/.xinitrc $HOME/.xinitrc
 
 
