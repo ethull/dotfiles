@@ -5,10 +5,12 @@ xfconf-query -c xfwm4 -p /general/theme -s Midnight-OrangeNight
 xfconf-query -c xfwm4 -p /general/cycle_preview -s true
 xfconf-query -c xfwm4 -p /general/cycle_raise -s true
 
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Super>h" -s tile_left_key
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Super>j" -s tile_down_key
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Super>k" -s tile_up_key
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Super>l" -s tile_right_key
+# window rearrangement keys similar to rectangle
+xfconf-query -n -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Left" -s tile_left_key #h
+xfconf-query -n -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Down" -s tile_down_key #j
+xfconf-query -n -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Up" -s tile_up_key #k
+xfconf-query -n -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Right" -s tile_right_key #l
+xfconf-query -n -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Return" -s maximize_window_key
 
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Shift><Super>greater" -s "mocp --next"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Shift><Super>less" -s "mocp --previous"
