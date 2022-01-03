@@ -32,6 +32,10 @@ ln -sf $Path/.config/tmux $HOME/.config/tmux
 [ -d $HOME/.config/vifm ] && rm -r $HOME/.config/vifm
 ln -sf $Path/.config/vifm $HOME/.config/vifm
 
+[ -d $HOME/.config/zathura ] && rm -r $HOME/.config/zathura
+ln -sf $Path/.config/zathura $HOME/.config/zathura
+
+
 [ ! -d $HOME/.local ] && mkdir $HOME/.local
 [ ! -d $HOME/.local/bin ] && mkdir $HOME/.local/bin
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
