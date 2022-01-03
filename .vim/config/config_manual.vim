@@ -1,2 +1,2 @@
-let g:load_plugins = 1
-let g:load_lsp = 1
+" options: noplugin, light, textedit, ide
+let g:editor_mode = "textedit"

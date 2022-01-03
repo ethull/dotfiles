@@ -7,8 +7,7 @@ let g:largeFile = getfsize(expand("%:p")) > g:largeFileSize
 "load users config options
 if filereadable(expand("~/.vim/config/config_manual.vim"))
   source ~/.vim/config/config_manual.vim
-  "if user choose to load plugins load them
-  if (g:load_plugins && !g:largeFile)
+  if (!g:largeFile)
     if filereadable(expand("~/.vim/config/plug.vim"))
       source ~/.vim/config/plug.vim
     else

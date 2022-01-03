@@ -1,6 +1,11 @@
 "" vim-plug setup
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
+"if not loading any plugins quit this file
+if (g:editor_mode == "noplugin")
+  finish
+endif
+
 if !filereadable(vimplug_exists)
   if !executable("curl")
     echoerr "You have to install curl or first install vim-plug yourself!"
@@ -37,9 +42,11 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 """ dev tools
 """" multi-language specific features
 """"" async linter, optionally basic lsp client
-Plug 'dense-analysis/ale'
+if (g:editor_mode == "textedit" || g:editor_mode == "ide")
+  Plug 'dense-analysis/ale'
+endif
 """"" versatile lsp client
-if (g:load_lsp)
+if (g:editor_mode == "ide")
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
 """"" expand abbreviations
@@ -72,11 +79,15 @@ Plug 'gorodinskiy/vim-coloresque'
 """" lang specific
 """"" markdown
 "Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'md', 'vim-plug']}
+if (g:editor_mode == "textedit" || g:editor_mode == "ide")
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'md', 'vim-plug']}
+endif
 "Plug 'gabrielelana/vim-markdown'
 Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'md']}
 """"" latex
-Plug 'lervag/vimtex', {'for': ['tex', 'latex']}
+if (g:editor_mode == "textedit" || g:editor_mode == "ide")
+  Plug 'lervag/vimtex', {'for': ['tex', 'latex']}
+endif
 """ vim-session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
