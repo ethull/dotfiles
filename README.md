@@ -12,7 +12,7 @@ configuration dotfiles and scripts to setup a newly installed linux system
 
 ## applications
 - zathura - pdf reader
-- sxiv - image viewer
+- feh - image viewer
 - moc - music player
 - mpv - video player
 - fzf - fuzzy finder

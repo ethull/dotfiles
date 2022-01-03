@@ -41,7 +41,6 @@ ln -sf $Path/.config/zathura $HOME/.config/zathura
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
 
 
-ln -sf $Path/.local/bin/dsxiv $HOME/.local/bin/dsxiv
 ln -sf $Path/.local/bin/copy $HOME/.local/bin/copy
 [ -d $HOME/.local/share/applications ] && rm -r $HOME/.local/share/applications
 ln -sf $Path/.local/share/applications $HOME/.local/share/applications
