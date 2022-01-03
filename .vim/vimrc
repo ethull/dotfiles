@@ -7,12 +7,10 @@ let g:largeFile = getfsize(expand("%:p")) > g:largeFileSize
 "load users config options
 if filereadable(expand("~/.vim/config/config_manual.vim"))
   source ~/.vim/config/config_manual.vim
-  if (!g:largeFile)
-    if filereadable(expand("~/.vim/config/plug.vim"))
-      source ~/.vim/config/plug.vim
-    else
-      filetype plugin indent on
-    endif
+  if filereadable(expand("~/.vim/config/plug.vim"))
+    source ~/.vim/config/plug.vim
+  else
+    filetype plugin indent on
   endif
 endif
 "load general vim settings

@@ -1,8 +1,8 @@
 "" vim-plug setup
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
-"if not loading any plugins quit this file
-if (g:editor_mode == "noplugin")
+"skip loading plugins if: told to via config or file is too large
+if (g:editor_mode == "noplugin" || g:largeFile)
   finish
 endif
 
