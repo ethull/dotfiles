@@ -49,6 +49,10 @@ endif
 if (g:editor_mode == "ide")
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
+""""" auto set cwd to proj root dir
+if (g:editor_mode == "ide")
+  Plug 'airblade/vim-rooter', {'branch': 'release'}
+endif
 """"" expand abbreviations
 Plug 'mattn/emmet-vim'
 """"" snippets
@@ -68,8 +72,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
-"https://github.com/airblade/vim-rooter
-"https://github.com/amiorin/vim-project
 """" lines show indentation, alternative to following for spaces :set list lcs=tab:\|\
 Plug 'Yggdroot/indentLine'
 """" contains language packs
