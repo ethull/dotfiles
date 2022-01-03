@@ -105,32 +105,6 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'liuchengxu/vim-which-key'
 "Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
-"" removed plugins
-""" dont work
-"streamless vim-tmux split navigation
-"Plug 'christoomey/vim-tmux-navigator'
-""" better alternative
-"Plug 'vim-scripts/grep.vim' //oudated, use fzf :Rg
-"python autocomplete, coc-python dependancy
-"Plug 'davidhalter/jedi-vim'
-"multi language autocomplete
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --java-completer --ts-completer' } //outdated, use lsps
-"Plug 'vim-latex/vim-latex'
-
-"Plug 'hail2u/vim-css3-syntax'
-"Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
-"Plug 'tpope/vim-haml'
-"Plug 'jelera/vim-javascript-syntax'
-"Plug 'davidhalter/jedi-vim'
-"Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
-""" not used
-" update stuff installed by vim-bootstrap
-"Plug 'avelino/vim-bootstrap-updater'
-"Plug 'tomasr/molokai' //better custom colourscheme
-"Plug 'vimwiki/vimwiki'
-"Plug 'parkr/vim-jekyll'
-"Plug 'dart-lang/dart-vim-plugin '
-
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
   source ~/.vimrc.local.bundles
