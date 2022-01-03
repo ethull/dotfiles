@@ -18,7 +18,7 @@ alias tarx="tar -xf"
 #alias rg="rg -i --color=auto"
 #alias mkdir='mkdir -pv'
 #alias suroot="sudo -E su -p"
-alias off="shutdown -h now"
+alias off="poweroff"
 
 # ubuntu ls aliases
 alias ll="ls -alF"
@@ -26,8 +26,9 @@ alias la="ls -A"
 alias l="ls -CF"
 alias lt="ls -h -s -1 -S"
 
-# find
-alias fd="find -name"
+# find, instead use fd pkg
+#alias fd="find -name"
+alias fd="fdfind"
 
 
 # fzf wrappers
