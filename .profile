@@ -63,6 +63,13 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 #echo 'eval "$(/home/emera/.linuxbrew/bin/brew shellenv)"' >> /home/emera/.profile
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 
+# n nodejs version manager
 #export N_PREFIX="$HOME/.local"
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+
+# texlive
+export PATH=/usr/local/texlive/2021/bin/x86_64-linux${PATH:+:${PATH}}
+export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info${INFOPATH:+:${INFOPATH}}
+export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man${MANPATH:+:${MANPATH}}
+unset MANPATH
