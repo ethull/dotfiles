@@ -256,7 +256,7 @@ fileviewer *.[1-8] man ./%c | col -b
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in feh}
-        \ feh %f &,
+        \ feh -. %f &,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
