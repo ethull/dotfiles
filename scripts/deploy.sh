@@ -9,7 +9,7 @@ ln -sf $Path/.profile $HOME/.profile
 ln -sf $Path/.xresources $HOME/.xresources
 ln -sf $Path/.xprofile $HOME/.xprofile
 ln -sf $Path/.xinitrc $HOME/.xinitrc
-ln -sf $Path/_gitignore $HOME/.gitignore
+ln -sf $Path/.gitignore_global $HOME/.gitignore
 git config --global core.excludesFile '~/.gitignore'
 
 
