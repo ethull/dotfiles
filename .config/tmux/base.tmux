@@ -29,7 +29,7 @@ set -g @tpm_plugins '            \
 # jimeh/tmux-themepack         \
 # wfxr/tmux-fzf-url            \
 
-set -g @resurrect-processes 'mocp ssh psql mysql sqlite3'
+set -g @resurrect-processes 'vim vi nvim vifm mocp ssh'
 set -g @resurrect-strategy-vim 'session'
 set -g @resurrect-strategy-nvim 'session'
 

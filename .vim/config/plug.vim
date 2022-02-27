@@ -85,14 +85,14 @@ if (g:editor_mode == "textedit" || g:editor_mode == "ide")
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'md', 'vim-plug']}
 endif
 "Plug 'gabrielelana/vim-markdown'
-Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'md']}
+"Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'md']}
+Plug 'preservim/vim-markdown', {'for': ['markdown', 'md']}
 """"" latex
 if (g:editor_mode == "textedit" || g:editor_mode == "ide")
   Plug 'lervag/vimtex', {'for': ['tex', 'latex']}
 endif
 """ vim-session
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
+Plug 'tpope/vim-obsession'
 """ other
 Plug 'ludwig/split-manpage.vim'
 """" extend native interface to unicode
