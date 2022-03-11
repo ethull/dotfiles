@@ -2,7 +2,7 @@
 sudo apt install vim-gtk3 vifm tmux
 sudo apt install urlview xsel xclip rg fzf exiftool
 
-sudo apt install xterm firefox flameshot thunderbird keepassxc zathura feh
+sudo apt install xterm firefox flameshot thunderbird keepassxc zathura feh codium
 
 sudo apt install -y build-essential git
 sudo apt install -y nodejs npm
